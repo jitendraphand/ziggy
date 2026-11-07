@@ -1,0 +1,346 @@
+{
+  "generator": "cad/parts.py (CadQuery)",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "thigh_cover_half",
+      "material": "PETG",
+      "qty": 4,
+      "load_class": "cover",
+      "print_orientation": "flange on bed, dome up",
+      "bbox_mm": [
+        340.0,
+        73.6,
+        28.8
+      ],
+      "volume_cm3": 86.96,
+      "valid_brep": true,
+      "step": "hardware/step/thigh_cover_half.step",
+      "stl": "hardware/stl/thigh_cover_half.stl",
+      "stl_sha256": "7e9adbc9cd8d184923fb265593a2fb80a73b193735c27d862ba3b748badf0a49"
+    },
+    {
+      "name": "shin_cover_half",
+      "material": "PETG",
+      "qty": 4,
+      "load_class": "cover",
+      "print_orientation": "flange on bed, dome up",
+      "bbox_mm": [
+        330.0,
+        73.6,
+        28.8
+      ],
+      "volume_cm3": 84.4,
+      "valid_brep": true,
+      "step": "hardware/step/shin_cover_half.step",
+      "stl": "hardware/stl/shin_cover_half.stl",
+      "stl_sha256": "1b0f37e2d5874e5a4d6deac047d123cc841c4fb4a2228df4654b026625952215"
+    },
+    {
+      "name": "upper_arm_cover_half",
+      "material": "PETG",
+      "qty": 4,
+      "load_class": "cover",
+      "print_orientation": "flange on bed",
+      "bbox_mm": [
+        220.0,
+        73.6,
+        28.8
+      ],
+      "volume_cm3": 56.19,
+      "valid_brep": true,
+      "step": "hardware/step/upper_arm_cover_half.step",
+      "stl": "hardware/stl/upper_arm_cover_half.stl",
+      "stl_sha256": "a06fe6b0a6db8920acb7bd6ad79bbccaa26af5a1701ed2cdd61ef68600d52806"
+    },
+    {
+      "name": "forearm_cover_half",
+      "material": "PETG",
+      "qty": 4,
+      "load_class": "cover",
+      "print_orientation": "flange on bed",
+      "bbox_mm": [
+        200.0,
+        73.6,
+        28.8
+      ],
+      "volume_cm3": 51.06,
+      "valid_brep": true,
+      "step": "hardware/step/forearm_cover_half.step",
+      "stl": "hardware/stl/forearm_cover_half.stl",
+      "stl_sha256": "c2be35b421a86dd3fa359df7353e8f0b020b1a2b2eed53d22071de0848f80ba6"
+    },
+    {
+      "name": "actuator_cover_ak80",
+      "material": "PETG",
+      "qty": 17,
+      "load_class": "cover",
+      "print_orientation": "lip on bed",
+      "bbox_mm": [
+        104.8,
+        104.8,
+        30.0
+      ],
+      "volume_cm3": 32.44,
+      "valid_brep": true,
+      "step": "hardware/step/actuator_cover_ak80.step",
+      "stl": "hardware/stl/actuator_cover_ak80.stl",
+      "stl_sha256": "22e11b8bc1689d036283f30a44cc923220d087e2d04aa1b21c4e8f532ebe13cf"
+    },
+    {
+      "name": "cable_clip_tube40",
+      "material": "PETG",
+      "qty": 24,
+      "load_class": "guide",
+      "print_orientation": "flat on bed",
+      "bbox_mm": [
+        46.0,
+        48.25,
+        12.0
+      ],
+      "volume_cm3": 4.48,
+      "valid_brep": true,
+      "step": "hardware/step/cable_clip_tube40.step",
+      "stl": "hardware/stl/cable_clip_tube40.stl",
+      "stl_sha256": "518cb6d8788ee333b7c6e94d537cbf59ded0e69e13abf372093d1471a2611a8d"
+    },
+    {
+      "name": "foot_sole_pad",
+      "material": "TPU-95A",
+      "qty": 2,
+      "load_class": "functional",
+      "print_orientation": "tread down",
+      "bbox_mm": [
+        240.0,
+        110.0,
+        6.0
+      ],
+      "volume_cm3": 150.49,
+      "valid_brep": true,
+      "step": "hardware/step/foot_sole_pad.step",
+      "stl": "hardware/stl/foot_sole_pad.stl",
+      "stl_sha256": "9c7250e27e3a81c1cea0efbe93d0e243082c64eac0e3dc507c30583cfcad6753"
+    },
+    {
+      "name": "foot_cover",
+      "material": "PETG",
+      "qty": 2,
+      "load_class": "cover",
+      "print_orientation": "open side down",
+      "bbox_mm": [
+        240.0,
+        110.0,
+        45.0
+      ],
+      "volume_cm3": 122.2,
+      "valid_brep": true,
+      "step": "hardware/step/foot_cover.step",
+      "stl": "hardware/stl/foot_cover.stl",
+      "stl_sha256": "52063236424a931655235a84d6400db6ec4e8ec51fb6bf155fadf3d6ee76741b"
+    },
+    {
+      "name": "torso_shell_front",
+      "material": "PETG",
+      "qty": 1,
+      "load_class": "cover",
+      "print_orientation": "open side down, tall",
+      "bbox_mm": [
+        340.0,
+        110.0,
+        440.0
+      ],
+      "volume_cm3": 995.52,
+      "valid_brep": true,
+      "step": "hardware/step/torso_shell_front.step",
+      "stl": "hardware/stl/torso_shell_front.stl",
+      "stl_sha256": "2451e5b776d58dfdd7bd9bd12bd96b2d622f79a601511b6db6af54398d5b1620"
+    },
+    {
+      "name": "torso_shell_back",
+      "material": "PETG",
+      "qty": 1,
+      "load_class": "cover",
+      "print_orientation": "open side down, tall",
+      "bbox_mm": [
+        340.0,
+        110.0,
+        440.0
+      ],
+      "volume_cm3": 995.52,
+      "valid_brep": true,
+      "step": "hardware/step/torso_shell_back.step",
+      "stl": "hardware/stl/torso_shell_back.stl",
+      "stl_sha256": "2451e5b776d58dfdd7bd9bd12bd96b2d622f79a601511b6db6af54398d5b1620"
+    },
+    {
+      "name": "pelvis_cover",
+      "material": "PETG",
+      "qty": 1,
+      "load_class": "cover",
+      "print_orientation": "open side down",
+      "bbox_mm": [
+        280.0,
+        160.0,
+        120.0
+      ],
+      "volume_cm3": 344.69,
+      "valid_brep": true,
+      "step": "hardware/step/pelvis_cover.step",
+      "stl": "hardware/stl/pelvis_cover.stl",
+      "stl_sha256": "803be5cc45ca629eab91185ed296c7125acbb60617e19388fe5442647fc00a0c"
+    },
+    {
+      "name": "head_shell_half",
+      "material": "PETG",
+      "qty": 2,
+      "load_class": "cover",
+      "print_orientation": "rim on bed, tree supports",
+      "bbox_mm": [
+        220.0,
+        220.0,
+        109.34
+      ],
+      "volume_cm3": 177.42,
+      "valid_brep": true,
+      "step": "hardware/step/head_shell_half.step",
+      "stl": "hardware/stl/head_shell_half.stl",
+      "stl_sha256": "72bad86a104f3afd3e75af206c1465498aa70ad384a66c1a2734f23d79edb407"
+    },
+    {
+      "name": "estop_mount",
+      "material": "PETG",
+      "qty": 1,
+      "load_class": "guide",
+      "print_orientation": "flat",
+      "bbox_mm": [
+        60.0,
+        60.0,
+        4.0
+      ],
+      "volume_cm3": 12.54,
+      "valid_brep": true,
+      "step": "hardware/step/estop_mount.step",
+      "stl": "hardware/stl/estop_mount.stl",
+      "stl_sha256": "6ed295572a484db8c1a88869858816cb780ad8305f67eac758d90f8f325a3915"
+    },
+    {
+      "name": "palm_base",
+      "material": "PETG",
+      "qty": 2,
+      "load_class": "functional",
+      "print_orientation": "back down",
+      "bbox_mm": [
+        95.5,
+        90.0,
+        32.0
+      ],
+      "volume_cm3": 56.47,
+      "valid_brep": true,
+      "step": "hardware/step/palm_base.step",
+      "stl": "hardware/stl/palm_base.stl",
+      "stl_sha256": "cca4b71df4ced0bbb16069bc1f2d5f6ea820728e311d9c77dd5b15151d4edafb"
+    },
+    {
+      "name": "phalanx_proximal",
+      "material": "PETG",
+      "qty": 10,
+      "load_class": "functional",
+      "print_orientation": "on side, pin bores vertical",
+      "bbox_mm": [
+        45.0,
+        14.0,
+        16.0
+      ],
+      "volume_cm3": 8.63,
+      "valid_brep": true,
+      "step": "hardware/step/phalanx_proximal.step",
+      "stl": "hardware/stl/phalanx_proximal.stl",
+      "stl_sha256": "331449f4f01f85e993756ae04fdc7cbbbd228cd9ec4ed78bf19427395df3d13b"
+    },
+    {
+      "name": "phalanx_middle",
+      "material": "PETG",
+      "qty": 8,
+      "load_class": "functional",
+      "print_orientation": "on side",
+      "bbox_mm": [
+        30.0,
+        14.0,
+        16.0
+      ],
+      "volume_cm3": 5.33,
+      "valid_brep": true,
+      "step": "hardware/step/phalanx_middle.step",
+      "stl": "hardware/stl/phalanx_middle.stl",
+      "stl_sha256": "1c007c9655b52147b77bcd405a2383164e17ac54310684e039a6a38641aa5ad6"
+    },
+    {
+      "name": "phalanx_distal",
+      "material": "PETG",
+      "qty": 10,
+      "load_class": "functional",
+      "print_orientation": "on side",
+      "bbox_mm": [
+        21.5,
+        14.0,
+        16.0
+      ],
+      "volume_cm3": 4.51,
+      "valid_brep": true,
+      "step": "hardware/step/phalanx_distal.step",
+      "stl": "hardware/stl/phalanx_distal.stl",
+      "stl_sha256": "70341b1bd64d9f67d49fe86e0690ed2660dbf2be7bedbb48c8f9a1fde345d23b"
+    },
+    {
+      "name": "tendon_spool",
+      "material": "PETG",
+      "qty": 12,
+      "load_class": "functional",
+      "print_orientation": "flat",
+      "bbox_mm": [
+        24.0,
+        24.0,
+        12.0
+      ],
+      "volume_cm3": 3.15,
+      "valid_brep": true,
+      "step": "hardware/step/tendon_spool.step",
+      "stl": "hardware/stl/tendon_spool.stl",
+      "stl_sha256": "194f3a19e85ac36feacc5ab601d0b4d7a2abfc1f19a0c9077b39e931db89bcfe"
+    },
+    {
+      "name": "coupon_holes",
+      "material": "PETG",
+      "qty": 1,
+      "load_class": "coupon",
+      "print_orientation": "flat",
+      "bbox_mm": [
+        110.0,
+        22.0,
+        5.0
+      ],
+      "volume_cm3": 11.69,
+      "valid_brep": true,
+      "step": "hardware/step/coupon_holes.step",
+      "stl": "hardware/stl/coupon_holes.stl",
+      "stl_sha256": "5215b71e486a9957765d980481fb12223f9c8383ea1c4db64d26d1c7c874fae3"
+    },
+    {
+      "name": "coupon_tube_fit",
+      "material": "PETG",
+      "qty": 1,
+      "load_class": "coupon",
+      "print_orientation": "flat",
+      "bbox_mm": [
+        252.8,
+        45.2,
+        10.0
+      ],
+      "volume_cm3": 13.45,
+      "valid_brep": true,
+      "step": "hardware/step/coupon_tube_fit.step",
+      "stl": "hardware/stl/coupon_tube_fit.stl",
+      "stl_sha256": "253fa3f970a7d5b9d9cc97c0dbea1e519e182de6089b4ddd987903c0902d6553"
+    }
+  ]
+}
