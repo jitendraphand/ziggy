@@ -66,7 +66,7 @@ def _finger(s, f, i):
             {j0 if k == 0 else ''}
             <joint name="{s}_{f}_{n}" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 {-pl[k]/2}" mass="{MASS['phalanx']}" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 {-pl[k]}" size="0.008"/>'''
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 {-pl[k]}" size="0.008"/>'''
         xml_close += "</body>"
         z += pl[k]
     xml_open += f'<site name="{s}_{f}_tip" pos="0 0 {-pl[2]}" size="0.004"/>'
@@ -77,7 +77,7 @@ def _hand(s):
     return f'''
             <body name="{s}_palm" pos="0 0 -0.04">
               <inertial pos="0 0 -0.045" mass="{MASS['hand_palm']}" diaginertia="0.0005 0.0005 0.0003"/>
-              <geom class="col" type="box" pos="0 0 -0.045" size="0.02 0.045 0.045"/>
+              <geom class="hand" type="box" pos="0 0 -0.045" size="0.02 0.045 0.045"/>
               <site name="{s}_grasp" pos="0.03 0 -0.07" size="0.01"/>
               {fingers}
             </body>'''
@@ -145,12 +145,14 @@ def build_xml():
   <visual><global offwidth="1280" offheight="960"/></visual>
   <default>
     <geom contype="0" conaffinity="0" rgba="0.75 0.78 0.82 1"/>
-    <default class="vis"><geom contype="0" conaffinity="0"/></default>
+    <!-- F-008: limb/torso/head geoms collide with the FLOOR only (contype 2 vs floor conaffinity 2); self-collision is off -->
+    <default class="vis"><geom contype="2" conaffinity="0" friction="0.9 0.01 0.001"/></default>
+    <default class="hand"><geom contype="2" conaffinity="0" friction="0.9 0.01 0.001"/></default>
     <default class="col"><geom contype="1" conaffinity="1" friction="0.9 0.01 0.001"/></default>
   </default>
   <worldbody>
     <light pos="0 0 3" dir="0 0 -1"/>
-    <geom name="floor" type="plane" size="5 5 0.1" contype="1" conaffinity="1" rgba="0.3 0.3 0.3 1"/>
+    <geom name="floor" type="plane" size="5 5 0.1" contype="1" conaffinity="3" rgba="0.3 0.3 0.3 1"/>
     <body name="pelvis" pos="0 0 {z0:.4f}">
       <freejoint name="root"/>
       <inertial pos="0 0 0" mass="{MASS['pelvis']}" diaginertia="0.05 0.03 0.05"/>

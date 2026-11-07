@@ -11,8 +11,29 @@ Everything here is **simulation**. No hardware exists. Every number comes from `
 | Gravity / timestep / integrator | −9.81 m/s², 2 ms, `implicitfast` | default contact solver (Newton, pyramidal cones) |
 | Mass | 46.0 kg | budget in `params.MASS`, **not** a CAD rollup |
 | Inertias | hand-estimated diagonal per link | should be replaced by CAD-derived values |
-| Collision | box soles (240×110 mm), finger and palm capsules; limbs are visual-only | friction 0.9 / 0.01 / 0.001 (assumed, not a measured floor/TPU value) |
+| Collision | soles collide with everything; limb, torso, head, palm and finger proxies collide **with the floor only** (self-collision off) | friction 0.9 / 0.01 / 0.001 (assumed, not a measured floor/TPU value) |
 | Joint dynamics | armature 0.005–0.05 kg·m², damping 0.02–2 N·m·s/rad | rough guesses that keep the sim stable; real values come from actuator ID |
+
+## F-008: falling robot passed through the floor (found from video review, fixed)
+Video review reported that the falling robot "shatters into pieces".
+
+**What the evidence showed.** Over the 300 N fall:
+* Every child body stayed attached to its parent: max parent-child anchor residual 3e-16 m (machine precision). MuJoCo uses generalized coordinates, so the joint tree cannot separate.
+* No state went non-finite.
+
+The cause was the collision setup. v0.1.1 gave collision geometry only to the soles and hands, so once the robot tipped over, its pelvis, torso and head **sank through the floor plane**: pelvis z −0.23 m and head −0.58 m at the end of the run. The floor hid the buried parts, so the visible ones looked disconnected.
+
+**The fix.** Every body proxy now collides with the floor. The robot does not collide with itself, so adjacent capsules can still overlap.
+
+**After the fix** (300 N fall):
+* minimum pelvis height 0.087 m (lying on the floor)
+* max penetration 40 mm, a brief impact transient from MuJoCo's default soft contact (solref 0.02 s) under a 46 kg impact; 0.24 mm at rest
+* finger-coupling equality violation at most 0.014 rad during the impact
+
+`tests/test_sim.py::test_trajectory_integrity` guards all of these.
+
+The standing and push numbers below did not change, because during standing only the soles touch the floor.
+The push marker is a red arrow: bright while the force is applied (1.0–1.1 s), dim for 0.35 s afterwards, plus a "PUSH ACTIVE" caption. It is drawn on the video only; the force itself is applied to the pelvis.
 
 ## Actuation: what the servo model is and isn't
 * MuJoCo `<position>` actuators with `gear = 1`, so actuator force equals joint torque in N·m.
@@ -65,7 +86,7 @@ Damped least squares on MuJoCo site Jacobians, with joint-limit clamping and bou
 The IK media are kinematic interpolations to each solved pose. They are labelled as such and are not dynamic tracking.
 
 ## Not measured or not implemented
-Walking and stepping, whole-body or squat IK, dynamic arm tracking under load, grasp contact quality, actuator thermal
+Robot self-collision (disabled), walking and stepping, whole-body or squat IK, dynamic arm tracking under load, grasp contact quality, actuator thermal
 limits, model-to-hardware identification, state estimation, latency and noise robustness, slopes and uneven floors.
 **Walking is not implemented. No result here shows walking.**
 
@@ -75,5 +96,5 @@ MUJOCO_GL=egl python tools/sim.py media                      # all media + media
 python tools/sim.py push --force 250 --controller ankle --seed 0 --duration 4 --out /tmp/push.mp4
 python tools/sim.py sweep --controller pd --fmax 400 --step 25 --dir 0 1
 python tools/view.py --controller ankle                       # interactive viewer (needs a display)
-python -m pytest -q tests                                     # 89 tests
+python -m pytest -q tests                                     # 94 tests
 ```

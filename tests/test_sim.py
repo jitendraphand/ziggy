@@ -68,3 +68,22 @@ def test_assembly_manifest_consistent():
     placed = {i["part"] for i in A["instances"]}
     assert placed <= man and man - placed == {"coupon_holes", "coupon_tube_fit"}
     assert "SCHEMATIC" in A["status"]
+
+# ---- F-008 regression: falls must stay physically consistent (tree intact, no floor pass-through)
+@pytest.mark.parametrize("force,ctrl", [(0.0, "pd"), (250.0, "ankle"), (300.0, "ankle"), (400.0, "pd")])
+def test_trajectory_integrity(force, ctrl):
+    g = run_stance(4.0, force, controller=ctrl)["integrity"]
+    assert not g["nonfinite"]
+    assert g["max_anchor_err_m"] < 1e-9            # generalized coords: bodies cannot separate
+    assert g["min_pelvis_z_m"] > 0.05              # torso/pelvis rest ON the floor, not through it
+    assert g["max_penetration_m"] < 0.05           # soft-contact transient at impact (solref 0.02 s default)
+    assert g["last_penetration_m"] < 0.01          # resting penetration after settling
+    assert g["max_eq_violation"] < 0.03            # finger coupling equality (rad), soft constraint
+
+def test_body_geoms_collide_with_floor_only():
+    m, _ = load()
+    fl = mujoco.mj_name2id(m, mujoco.mjtObj.mjOBJ_GEOM, "floor")
+    for g in range(m.ngeom):
+        if g == fl: continue
+        hits_floor = (m.geom_contype[g] & m.geom_conaffinity[fl]) or (m.geom_contype[fl] & m.geom_conaffinity[g])
+        assert hits_floor, m.geom(g).name

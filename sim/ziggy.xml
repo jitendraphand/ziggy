@@ -6,12 +6,14 @@
   <visual><global offwidth="1280" offheight="960"/></visual>
   <default>
     <geom contype="0" conaffinity="0" rgba="0.75 0.78 0.82 1"/>
-    <default class="vis"><geom contype="0" conaffinity="0"/></default>
+    <!-- F-008: limb/torso/head geoms collide with the FLOOR only (contype 2 vs floor conaffinity 2); self-collision is off -->
+    <default class="vis"><geom contype="2" conaffinity="0" friction="0.9 0.01 0.001"/></default>
+    <default class="hand"><geom contype="2" conaffinity="0" friction="0.9 0.01 0.001"/></default>
     <default class="col"><geom contype="1" conaffinity="1" friction="0.9 0.01 0.001"/></default>
   </default>
   <worldbody>
     <light pos="0 0 3" dir="0 0 -1"/>
-    <geom name="floor" type="plane" size="5 5 0.1" contype="1" conaffinity="1" rgba="0.3 0.3 0.3 1"/>
+    <geom name="floor" type="plane" size="5 5 0.1" contype="1" conaffinity="3" rgba="0.3 0.3 0.3 1"/>
     <body name="pelvis" pos="0 0 0.9220">
       <freejoint name="root"/>
       <inertial pos="0 0 0" mass="5.0" diaginertia="0.05 0.03 0.05"/>
@@ -115,84 +117,84 @@
                     
             <body name="l_palm" pos="0 0 -0.04">
               <inertial pos="0 0 -0.045" mass="0.4" diaginertia="0.0005 0.0005 0.0003"/>
-              <geom class="col" type="box" pos="0 0 -0.045" size="0.02 0.045 0.045"/>
+              <geom class="hand" type="box" pos="0 0 -0.045" size="0.02 0.045 0.045"/>
               <site name="l_grasp" pos="0.03 0 -0.07" size="0.01"/>
               
           <body name="l_thumb_mcp_link" pos="0.02 0.03 -0.03">
             <joint name="l_thumb_opp" axis="0 0 1" range="0 90" armature="0.001" damping="0.05"/>
             <joint name="l_thumb_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="l_thumb_pip_link" pos="0 0 -0.045">
             
             <joint name="l_thumb_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="l_thumb_dip_link" pos="0 0 -0.03">
             
             <joint name="l_thumb_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_thumb_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_thumb_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="l_index_mcp_link" pos="0 -0.0315 -0.09">
             
             <joint name="l_index_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="l_index_pip_link" pos="0 0 -0.045">
             
             <joint name="l_index_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="l_index_dip_link" pos="0 0 -0.03">
             
             <joint name="l_index_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_index_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_index_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="l_middle_mcp_link" pos="0 -0.0105 -0.09">
             
             <joint name="l_middle_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="l_middle_pip_link" pos="0 0 -0.045">
             
             <joint name="l_middle_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="l_middle_dip_link" pos="0 0 -0.03">
             
             <joint name="l_middle_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_middle_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_middle_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="l_ring_mcp_link" pos="0 0.0105 -0.09">
             
             <joint name="l_ring_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="l_ring_pip_link" pos="0 0 -0.045">
             
             <joint name="l_ring_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="l_ring_dip_link" pos="0 0 -0.03">
             
             <joint name="l_ring_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_ring_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_ring_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="l_little_mcp_link" pos="0 0.0315 -0.09">
             
             <joint name="l_little_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="l_little_pip_link" pos="0 0 -0.045">
             
             <joint name="l_little_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="l_little_dip_link" pos="0 0 -0.03">
             
             <joint name="l_little_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_little_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="l_little_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
             </body>
                   </body>
                 </body>
@@ -227,84 +229,84 @@
                     
             <body name="r_palm" pos="0 0 -0.04">
               <inertial pos="0 0 -0.045" mass="0.4" diaginertia="0.0005 0.0005 0.0003"/>
-              <geom class="col" type="box" pos="0 0 -0.045" size="0.02 0.045 0.045"/>
+              <geom class="hand" type="box" pos="0 0 -0.045" size="0.02 0.045 0.045"/>
               <site name="r_grasp" pos="0.03 0 -0.07" size="0.01"/>
               
           <body name="r_thumb_mcp_link" pos="0.02 -0.03 -0.03">
             <joint name="r_thumb_opp" axis="0 0 1" range="0 90" armature="0.001" damping="0.05"/>
             <joint name="r_thumb_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="r_thumb_pip_link" pos="0 0 -0.045">
             
             <joint name="r_thumb_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="r_thumb_dip_link" pos="0 0 -0.03">
             
             <joint name="r_thumb_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_thumb_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_thumb_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="r_index_mcp_link" pos="0 0.0315 -0.09">
             
             <joint name="r_index_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="r_index_pip_link" pos="0 0 -0.045">
             
             <joint name="r_index_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="r_index_dip_link" pos="0 0 -0.03">
             
             <joint name="r_index_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_index_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_index_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="r_middle_mcp_link" pos="0 0.0105 -0.09">
             
             <joint name="r_middle_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="r_middle_pip_link" pos="0 0 -0.045">
             
             <joint name="r_middle_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="r_middle_dip_link" pos="0 0 -0.03">
             
             <joint name="r_middle_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_middle_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_middle_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="r_ring_mcp_link" pos="0 -0.0105 -0.09">
             
             <joint name="r_ring_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="r_ring_pip_link" pos="0 0 -0.045">
             
             <joint name="r_ring_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="r_ring_dip_link" pos="0 0 -0.03">
             
             <joint name="r_ring_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_ring_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_ring_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
           <body name="r_little_mcp_link" pos="0 -0.0315 -0.09">
             
             <joint name="r_little_mcp" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0225" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.045" size="0.008"/>
           <body name="r_little_pip_link" pos="0 0 -0.045">
             
             <joint name="r_little_pip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.015" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.03" size="0.008"/>
           <body name="r_little_dip_link" pos="0 0 -0.03">
             
             <joint name="r_little_dip" axis="0 1 0" range="0 95" armature="0.0005" damping="0.02"/>
             <inertial pos="0 0 -0.0125" mass="0.02" diaginertia="1e-6 1e-6 1e-6"/>
-            <geom class="col" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_little_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
+            <geom class="hand" type="capsule" fromto="0 0 0 0 0 -0.025" size="0.008"/><site name="r_little_tip" pos="0 0 -0.025" size="0.004"/></body></body></body>
             </body>
                   </body>
                 </body>

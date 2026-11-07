@@ -33,16 +33,16 @@
     "floor_pickup_0.10m": 689.64
   },
   "pd_stance_5s": {
-    "pelvis_drop_m": 0.003495492402349032,
-    "min_cos_tilt": 0.9999940171733289,
-    "min_support_margin_m": 0.0892621856403604,
-    "final_margin_m": 0.08988354870543201
+    "pelvis_drop_m": 0.0034953654426781444,
+    "min_cos_tilt": 0.9999935241119117,
+    "min_support_margin_m": 0.08916168619301706,
+    "final_margin_m": 0.08980500511160361
   },
   "pd_stance_40N_0.1s_push": {
-    "pelvis_drop_m": 0.003495492402349032,
-    "min_cos_tilt": 0.9996273217981031,
-    "min_support_margin_m": 0.07423102792064405,
-    "final_margin_m": 0.09343405985034119
+    "pelvis_drop_m": 0.0034953654426781444,
+    "min_cos_tilt": 0.9996253713706428,
+    "min_support_margin_m": 0.07417349186109062,
+    "final_margin_m": 0.09333482361962155
   },
   "torque_ratio_ge_0.8_of_rated": {
     "stand": {},

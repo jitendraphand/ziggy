@@ -48,9 +48,10 @@ def run_stance(duration=4.0, push_n=0.0, push_dir=(1, 0), push_t=1.0, push_dt=0.
     fell = False; t_fall = None; ren = None; cam = None
     if record is not None:
         ren = mujoco.Renderer(m, 360, 480); cam = mujoco.MjvCamera()
-        cam.lookat[:] = (0, 0, 0.85); cam.distance = 3.2; cam.azimuth = 135; cam.elevation = -12
+        cam.lookat[:] = (0.55, 0, 0.6); cam.distance = 4.2; cam.azimuth = 120; cam.elevation = -14
     next_frame = 0.0; dirv = np.array(push_dir, float); dirv /= np.linalg.norm(dirv)
     vcom = np.zeros(2); prev = com0.copy(); base = None
+    integ = {"nonfinite": False, "max_anchor_err_m": 0.0, "max_penetration_m": 0.0, "min_pelvis_z_m": 9.0, "max_eq_violation": 0.0}
     while d.time < duration:
         com = d.subtree_com[1][:2]
         mujoco.mj_subtreeVel(m, d); vcom = d.subtree_linvel[1][:2].copy()
@@ -66,6 +67,7 @@ def run_stance(duration=4.0, push_n=0.0, push_dir=(1, 0), push_t=1.0, push_dt=0.
         on = push_t <= d.time < push_t + push_dt
         d.xfrc_applied[1, :2] = dirv * push_n if on else 0.0
         mujoco.mj_step(m, d)
+        _integrity(m, d, integ)
         tilt = np.degrees(np.arccos(np.clip(1 - 2 * (d.qpos[4]**2 + d.qpos[5]**2), -1, 1)))
         if not fell and (d.qpos[2] < z0 - 0.25 or tilt > 30):
             fell = True; t_fall = float(d.time)
@@ -79,7 +81,8 @@ def run_stance(duration=4.0, push_n=0.0, push_dir=(1, 0), push_t=1.0, push_dt=0.
             log["margin"].append(support_margin(m, d, feet) if feet else -1.0)
             log["sat"].append(int(np.sum(np.abs(d.actuator_force) >= peak * 0.999)))
         if ren is not None and d.time >= next_frame:
-            ren.update_scene(d, cam); _push_arrow(ren.scene, d, dirv, on); record.append(ren.render().copy())
+            ren.update_scene(d, cam); _push_arrow(ren.scene, d, dirv, push_n > 0 and push_t - 0.05 <= d.time < push_t + push_dt + 0.35, on)
+            record.append(ren.render().copy())
             next_frame += 1.0 / fps
     t = np.array(log["t"]); cx = np.array(log["com_x"]); cy = np.array(log["com_y"])
     disp = np.hypot(cx, cy); post = t > push_t + push_dt
@@ -99,15 +102,30 @@ def run_stance(duration=4.0, push_n=0.0, push_dir=(1, 0), push_t=1.0, push_dt=0.
             "max_com_disp_mm": float(disp.max() * 1e3), "final_com_disp_mm": final * 1e3,
             "min_contact_margin_mm": float(min(log["margin"]) * 1e3), "final_contact_margin_mm": final_margin * 1e3,
             "max_saturated_actuators": int(max(log["sat"])),
+            "integrity": integ,
             "foot_slip_mm": float(np.linalg.norm(d.xpos[fb, :2] - foot0, axis=1).max() * 1e3), "min_feet_in_contact": int(min(log["nfeet"])),
             "log": log}
 
-def _push_arrow(scn, d, dirv, on):
-    if not on or scn.ngeom >= scn.maxgeom: return
-    p = d.xpos[1].copy(); a = p - np.r_[dirv, 0] * 0.5
-    mujoco.mjv_initGeom(scn.geoms[scn.ngeom], mujoco.mjtGeom.mjGEOM_ARROW, np.zeros(3), np.zeros(3), np.zeros(9),
-                        np.array([1, 0.1, 0.1, 1], np.float32))
-    mujoco.mjv_connector(scn.geoms[scn.ngeom], mujoco.mjtGeom.mjGEOM_ARROW, 0.02, a, p); scn.ngeom += 1
+def _integrity(m, d, g):
+    """Per-step physical-consistency checks (F-008 investigation)."""
+    g["nonfinite"] |= not (np.all(np.isfinite(d.qpos)) and np.all(np.isfinite(d.qvel)))
+    for b in range(2, m.nbody):   # child origin must equal parent pose * fixed offset (tree cannot separate)
+        p = m.body_parentid[b]
+        g["max_anchor_err_m"] = max(g["max_anchor_err_m"], float(np.linalg.norm(d.xpos[p] + d.xmat[p].reshape(3, 3) @ m.body_pos[b] - d.xpos[b])))
+    pen = max([float(-d.contact[i].dist) for i in range(d.ncon)] + [0.0])
+    g["max_penetration_m"] = max(g["max_penetration_m"], pen); g["last_penetration_m"] = pen
+    g["min_pelvis_z_m"] = min(g["min_pelvis_z_m"], float(d.qpos[2]))
+    if d.nefc:  # finger tendon-coupling equality residuals
+        eq = d.efc_type == mujoco.mjtConstraint.mjCNSTR_EQUALITY
+        if eq.any(): g["max_eq_violation"] = max(g["max_eq_violation"], float(np.abs(d.efc_pos[eq]).max()))
+
+def _push_arrow(scn, d, dirv, show, active):
+    """Visual marker only: bright red while the force is applied, dim red for 0.35 s afterwards."""
+    if not show or scn.ngeom >= scn.maxgeom: return
+    p = d.xpos[1].copy(); a = p - np.r_[dirv, 0] * 0.7
+    col = np.array([1, 0.05, 0.05, 1] if active else [0.6, 0.2, 0.2, 0.6], np.float32)
+    mujoco.mjv_initGeom(scn.geoms[scn.ngeom], mujoco.mjtGeom.mjGEOM_ARROW, np.zeros(3), np.zeros(3), np.zeros(9), col)
+    mujoco.mjv_connector(scn.geoms[scn.ngeom], mujoco.mjtGeom.mjGEOM_ARROW, 0.04, a, p); scn.ngeom += 1
 
 def push_sweep(controller, forces=range(0, 401, 25), push_dt=0.1, duration=4.0, direction=(1, 0)):
     rows = []

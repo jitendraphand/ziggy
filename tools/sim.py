@@ -40,7 +40,7 @@ def push_clip(force, controller, dt=0.1, duration=4.0, direction=(1, 0), seed=0)
     st = ("FELL at %.2fs" % r["t_fall_s"] if r["t_fall_s"] else "FALLING (CoM outside support)") if r["fell"] else ("RECOVERED" if r["recovered"] else "SURVIVED, not recovered")
     T = np.arange(len(fr)) / 30.0
     out = [label(f, [f"PHYSICS sim | controller={controller} | push {force:.0f} N x {dt}s ({force*dt:.0f} N*s) at t=1.0s",
-                     f"t={t:4.2f}s  result: {st}  maxCoM {r['max_com_disp_mm']:.0f} mm"],
+                     f"t={t:4.2f}s  result: {st}  maxCoM {r['max_com_disp_mm']:.0f} mm" + ("   >>> PUSH ACTIVE <<<" if 1.0 <= t < 1.0 + dt else "")],
                  (255, 120, 120) if r["fell"] else ((120, 255, 120) if r["recovered"] else (255, 230, 120)))
            for f, t in zip(fr, T)]
     return out, r
