@@ -15,7 +15,9 @@ def test_no_overclaims_in_docs():
     validated = {c["id"] for c in CLAIMS if c["status"] == "validated-physical"}
     banned = {"WALK": r"\b(walks|is walking|walking verified|dynamically balanced)\b",
               "SAFE_HOME": r"\b(safe for (home|household) use|household[- ]ready|production[- ]ready)\b",
-              "STRUCT": r"\bprinted (joints?|parts?) (are|is) (load[- ]rated|structural)\b"}
+              "STRUCT": r"\bprinted (joints?|parts?) (are|is) (load[- ]rated|structural)\b",
+              "WORLD_CLASS": r"\b(is|are) (a )?(world[- ]class|best[- ]in[- ]class)|surpass(es|ing)? world|\bis (a )?finished (engineering )?product",
+              "MFG_RELEASE": r"\breleased for manufactur|\bready for manufactur"}
     for f in [pathlib.Path("README.md")] + list(pathlib.Path("docs").rglob("*.md")):
         t = f.read_text().lower()
         for cid, pat in banned.items():

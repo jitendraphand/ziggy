@@ -4,7 +4,7 @@
 | Path | SPDX |
 |---|---|
 | `ziggy/`, `tools/`, `tests/`, `cad/build.py`, `cad/__init__.py`, CI | Apache-2.0 |
-| `cad/parts.py` (hardware design source), `hardware/**` (STEP, STL, manifest, assembly.json), `sim/ziggy.xml` | CERN-OHL-S-2.0 |
+| `cad/parts.py`, `cad/lower_body.py` (hardware design source), `hardware/**` incl. `hardware/lower_body/**` (STEP, STL, manifest, assembly.json), `sim/ziggy.xml` | CERN-OHL-S-2.0 |
 | `README.md`, `SAFETY.md`, `docs/**`, `media/**` (generated renders, metrics) | CC-BY-4.0 |
 
 Third-party content: none vendored. Python dependencies (MuJoCo Apache-2.0, CadQuery Apache-2.0,

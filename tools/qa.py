@@ -19,7 +19,10 @@ def regenerate(clean=False):
     if clean:
         for d in ("hardware/step", "hardware/stl"):
             shutil.rmtree(ROOT/d, ignore_errors=True)
-    return run([sys.executable, "-m", "cad.build"]) or run([sys.executable, "-m", "ziggy.mjcf"])
+    return (run([sys.executable, "-m", "cad.build"]) or run([sys.executable, "-m", "ziggy.mjcf"])
+            # v0.2 lower body: geometry evidence -> hand calcs -> gates (derived) -> previews
+            or run([sys.executable, "tools/lower_body_qa.py"]) or run([sys.executable, "tools/hand_calcs.py"])
+            or run([sys.executable, "tools/engineering_gates.py"]) or run([sys.executable, "tools/lower_body_views.py"]))
 
 def metrics():
     sys.path.insert(0, str(ROOT))
@@ -57,7 +60,10 @@ def main():
         if run([sys.executable, "-m", "pytest", "-q", "tests"]) == 0:
             ok = True; break
     report(rnd, ok, metrics())
-    print("QA", "PASS" if ok else "FAIL (release blocked)")
+    gates = json.loads((ROOT/"docs"/"ENGINEERING_GATES.json").read_text())
+    nfail = sum(g["status"] != "PASS" for g in gates)
+    print("test suite", "PASS" if ok else "FAIL", f"| engineering gates: {nfail} not passed ->",
+          "manufacturing release BLOCKED" if nfail else "all gates pass (still requires physical verification)")
     sys.exit(0 if ok else 1)
 
 if __name__ == "__main__":

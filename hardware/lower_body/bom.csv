@@ -1,0 +1,166 @@
+id,make_buy,kind,material,process,qty,mass_kg,critical,status,source_file
+AR-PLA-L,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.1779,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,hardware/lower_body/step/AR-PLA-L.step
+AR-PLB-L,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.3811,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,hardware/lower_body/step/AR-PLB-L.step
+AR-PBR-L,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3091,"4xØ6.6 on 44 sq, ±0.05",preliminary,hardware/lower_body/step/AR-PBR-L.step
+AR-ARA-L,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1656,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,hardware/lower_body/step/AR-ARA-L.step
+AR-ARB-L,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1566,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,hardware/lower_body/step/AR-ARB-L.step
+AR-DBR-L,make,structure,6061-T6,CNC 3-axis block,1,0.185,4xØ6.6 on 44 sq,preliminary,hardware/lower_body/step/AR-DBR-L.step
+AR-SFT-L,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,hardware/lower_body/step/AR-SFT-L.step
+AR-SPC-L,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,hardware/lower_body/step/AR-SPC-L.step
+AR-CAP-L,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,hardware/lower_body/step/AR-CAP-L.step
+AR-PIN-L,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,hardware/lower_body/step/AR-PIN-L.step
+AR-BRG-L,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,hardware/lower_body/step/AR-BRG-L.step
+AR-CLP-L,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,hardware/lower_body/step/AR-CLP-L.step
+AR-ACT-L,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,hardware/lower_body/step/AR-ACT-L.step
+AP-PLA-L,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.2069,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,hardware/lower_body/step/AP-PLA-L.step
+AP-PLB-L,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.4195,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,hardware/lower_body/step/AP-PLB-L.step
+AP-PBR-L,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3878,"Ø40 H8 socket, slit, 2xM6, Ø6 H7 cross pin",preliminary,hardware/lower_body/step/AP-PBR-L.step
+AP-ARA-L,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1656,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,hardware/lower_body/step/AP-ARA-L.step
+AP-ARB-L,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1566,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,hardware/lower_body/step/AP-ARB-L.step
+AP-DBR-L,make,structure,6061-T6,CNC 3-axis block,1,0.185,4xØ6.6 on 44 sq,preliminary,hardware/lower_body/step/AP-DBR-L.step
+AP-SFT-L,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,hardware/lower_body/step/AP-SFT-L.step
+AP-SPC-L,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,hardware/lower_body/step/AP-SPC-L.step
+AP-CAP-L,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,hardware/lower_body/step/AP-CAP-L.step
+AP-PIN-L,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,hardware/lower_body/step/AP-PIN-L.step
+AP-BRG-L,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,hardware/lower_body/step/AP-BRG-L.step
+AP-CLP-L,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,hardware/lower_body/step/AP-CLP-L.step
+AP-ACT-L,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,hardware/lower_body/step/AP-ACT-L.step
+KN-PLA-L,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.3295,DRAWING REQUIRED,preliminary,hardware/lower_body/step/KN-PLA-L.step
+KN-PLB-L,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.471,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,hardware/lower_body/step/KN-PLB-L.step
+KN-PBR-L,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.391,"Ø40 H8 socket, slit, 2xM6, Ø6 H7 cross pin",preliminary,hardware/lower_body/step/KN-PBR-L.step
+KN-ARA-L,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1806,DRAWING REQUIRED,preliminary,hardware/lower_body/step/KN-ARA-L.step
+KN-ARB-L,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1732,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,hardware/lower_body/step/KN-ARB-L.step
+KN-DBR-L,make,structure,6061-T6,CNC 3-axis block,1,0.2094,"Ø40 H8 socket, slit, 2xM6",preliminary,hardware/lower_body/step/KN-DBR-L.step
+KN-SFT-L,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,hardware/lower_body/step/KN-SFT-L.step
+KN-SPC-L,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,hardware/lower_body/step/KN-SPC-L.step
+KN-CAP-L,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,hardware/lower_body/step/KN-CAP-L.step
+KN-PIN-L,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,hardware/lower_body/step/KN-PIN-L.step
+KN-BRG-L,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,hardware/lower_body/step/KN-BRG-L.step
+KN-CLP-L,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,hardware/lower_body/step/KN-CLP-L.step
+KN-ACT-L,buy,envelope-purchased,steel,purchased,1,1.42,RS04 envelope from datasheet,envelope,hardware/lower_body/step/KN-ACT-L.step
+HP-PLA-L,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.1779,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,hardware/lower_body/step/HP-PLA-L.step
+HP-PLB-L,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.3681,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,hardware/lower_body/step/HP-PLB-L.step
+HP-PBR-L,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3091,"4xØ6.6 on 44 sq, ±0.05",preliminary,hardware/lower_body/step/HP-PBR-L.step
+HP-ARA-L,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1822,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,hardware/lower_body/step/HP-ARA-L.step
+HP-ARB-L,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1732,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,hardware/lower_body/step/HP-ARB-L.step
+HP-DBR-L,make,structure,6061-T6,CNC 3-axis block,1,0.2094,"Ø40 H8 socket, slit, 2xM6",preliminary,hardware/lower_body/step/HP-DBR-L.step
+HP-SFT-L,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,hardware/lower_body/step/HP-SFT-L.step
+HP-SPC-L,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,hardware/lower_body/step/HP-SPC-L.step
+HP-CAP-L,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,hardware/lower_body/step/HP-CAP-L.step
+HP-PIN-L,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,hardware/lower_body/step/HP-PIN-L.step
+HP-BRG-L,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,hardware/lower_body/step/HP-BRG-L.step
+HP-CLP-L,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,hardware/lower_body/step/HP-CLP-L.step
+HP-ACT-L,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,hardware/lower_body/step/HP-ACT-L.step
+HR-PLA-L,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.1779,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,hardware/lower_body/step/HR-PLA-L.step
+HR-PLB-L,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.3772,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,hardware/lower_body/step/HR-PLB-L.step
+HR-PBR-L,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3091,"4xØ6.6 on 44 sq, ±0.05",preliminary,hardware/lower_body/step/HR-PBR-L.step
+HR-ARA-L,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1656,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,hardware/lower_body/step/HR-ARA-L.step
+HR-ARB-L,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1566,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,hardware/lower_body/step/HR-ARB-L.step
+HR-DBR-L,make,structure,6061-T6,CNC 3-axis block,1,0.185,4xØ6.6 on 44 sq,preliminary,hardware/lower_body/step/HR-DBR-L.step
+HR-SFT-L,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,hardware/lower_body/step/HR-SFT-L.step
+HR-SPC-L,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,hardware/lower_body/step/HR-SPC-L.step
+HR-CAP-L,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,hardware/lower_body/step/HR-CAP-L.step
+HR-PIN-L,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,hardware/lower_body/step/HR-PIN-L.step
+HR-BRG-L,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,hardware/lower_body/step/HR-BRG-L.step
+HR-CLP-L,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,hardware/lower_body/step/HR-CLP-L.step
+HR-ACT-L,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,hardware/lower_body/step/HR-ACT-L.step
+SHIN-TUBE-L,make,structure,6061-T6,saw-cut tube + drill Ø6 H7 cross holes (jig),1,0.1723,length 184.0 ±0.2; cross holes ⟂ ±0.1,preliminary,hardware/lower_body/step/SHIN-TUBE-L.step
+THIGH-TUBE-L,make,structure,6061-T6,saw-cut tube + drill Ø6 H7 cross holes (jig),1,0.1893,length 202.0 ±0.2; cross holes ⟂ ±0.1,preliminary,hardware/lower_body/step/THIGH-TUBE-L.step
+FOOT-PLATE-L,make,structure,6061-T6,waterjet 10 mm plate,1,0.5569,4xØ6.6 on 44 sq; flatness 0.2,preliminary,hardware/lower_body/step/FOOT-PLATE-L.step
+HY-OUT-L,make,structure,6061-T6,CNC plate 10 mm + Ø21 g6 spigot,1,0.0917,Ø21 g6 spigot; 6xØ4.5 on Ø28; 4xØ6.6 on 44 sq,preliminary,hardware/lower_body/step/HY-OUT-L.step
+HY-ACT-L,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope,envelope,hardware/lower_body/step/HY-ACT-L.step
+AR-RCAP-L,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,hardware/lower_body/step/AR-RCAP-L.step
+AR-BCOV-L,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,hardware/lower_body/step/AR-BCOV-L.step
+AP-RCAP-L,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,hardware/lower_body/step/AP-RCAP-L.step
+AP-BCOV-L,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,hardware/lower_body/step/AP-BCOV-L.step
+KN-BCOV-L,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,hardware/lower_body/step/KN-BCOV-L.step
+HP-RCAP-L,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,hardware/lower_body/step/HP-RCAP-L.step
+HP-BCOV-L,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,hardware/lower_body/step/HP-BCOV-L.step
+HR-RCAP-L,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,hardware/lower_body/step/HR-RCAP-L.step
+HR-BCOV-L,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,hardware/lower_body/step/HR-BCOV-L.step
+AR-PLA-R,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.1779,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,mirror of AR-PLA-L
+AR-PLB-R,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.3811,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,mirror of AR-PLB-L
+AR-PBR-R,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3091,"4xØ6.6 on 44 sq, ±0.05",preliminary,mirror of AR-PBR-L
+AR-ARA-R,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1656,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,mirror of AR-ARA-L
+AR-ARB-R,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1566,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,mirror of AR-ARB-L
+AR-DBR-R,make,structure,6061-T6,CNC 3-axis block,1,0.185,4xØ6.6 on 44 sq,preliminary,mirror of AR-DBR-L
+AR-SFT-R,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,mirror of AR-SFT-L
+AR-SPC-R,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,mirror of AR-SPC-L
+AR-CAP-R,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,mirror of AR-CAP-L
+AR-PIN-R,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,mirror of AR-PIN-L
+AR-BRG-R,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,mirror of AR-BRG-L
+AR-CLP-R,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,mirror of AR-CLP-L
+AR-ACT-R,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,mirror of AR-ACT-L
+AP-PLA-R,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.2069,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,mirror of AP-PLA-L
+AP-PLB-R,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.4195,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,mirror of AP-PLB-L
+AP-PBR-R,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3878,"Ø40 H8 socket, slit, 2xM6, Ø6 H7 cross pin",preliminary,mirror of AP-PBR-L
+AP-ARA-R,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1656,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,mirror of AP-ARA-L
+AP-ARB-R,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1566,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,mirror of AP-ARB-L
+AP-DBR-R,make,structure,6061-T6,CNC 3-axis block,1,0.185,4xØ6.6 on 44 sq,preliminary,mirror of AP-DBR-L
+AP-SFT-R,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,mirror of AP-SFT-L
+AP-SPC-R,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,mirror of AP-SPC-L
+AP-CAP-R,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,mirror of AP-CAP-L
+AP-PIN-R,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,mirror of AP-PIN-L
+AP-BRG-R,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,mirror of AP-BRG-L
+AP-CLP-R,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,mirror of AP-CLP-L
+AP-ACT-R,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,mirror of AP-ACT-L
+KN-PLA-R,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.3295,DRAWING REQUIRED,preliminary,mirror of KN-PLA-L
+KN-PLB-R,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.471,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,mirror of KN-PLB-L
+KN-PBR-R,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.391,"Ø40 H8 socket, slit, 2xM6, Ø6 H7 cross pin",preliminary,mirror of KN-PBR-L
+KN-ARA-R,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1806,DRAWING REQUIRED,preliminary,mirror of KN-ARA-L
+KN-ARB-R,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1732,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,mirror of KN-ARB-L
+KN-DBR-R,make,structure,6061-T6,CNC 3-axis block,1,0.2094,"Ø40 H8 socket, slit, 2xM6",preliminary,mirror of KN-DBR-L
+KN-SFT-R,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,mirror of KN-SFT-L
+KN-SPC-R,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,mirror of KN-SPC-L
+KN-CAP-R,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,mirror of KN-CAP-L
+KN-PIN-R,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,mirror of KN-PIN-L
+KN-BRG-R,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,mirror of KN-BRG-L
+KN-CLP-R,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,mirror of KN-CLP-L
+KN-ACT-R,buy,envelope-purchased,steel,purchased,1,1.42,RS04 envelope from datasheet,envelope,mirror of KN-ACT-L
+HP-PLA-R,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.1779,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,mirror of HP-PLA-L
+HP-PLB-R,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.3681,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,mirror of HP-PLB-L
+HP-PBR-R,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3091,"4xØ6.6 on 44 sq, ±0.05",preliminary,mirror of HP-PBR-L
+HP-ARA-R,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1822,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,mirror of HP-ARA-L
+HP-ARB-R,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1732,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,mirror of HP-ARB-L
+HP-DBR-R,make,structure,6061-T6,CNC 3-axis block,1,0.2094,"Ø40 H8 socket, slit, 2xM6",preliminary,mirror of HP-DBR-L
+HP-SFT-R,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,mirror of HP-SFT-L
+HP-SPC-R,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,mirror of HP-SPC-L
+HP-CAP-R,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,mirror of HP-CAP-L
+HP-PIN-R,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,mirror of HP-PIN-L
+HP-BRG-R,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,mirror of HP-BRG-L
+HP-CLP-R,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,mirror of HP-CLP-L
+HP-ACT-R,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,mirror of HP-ACT-L
+HR-PLA-R,make,structure,6061-T6,waterjet 8 mm plate + CNC bore/holes,1,0.1779,Ø80.4 H8 bore; 8xØ3.2 on Ø85 PCD; flatness 0.05,preliminary,mirror of HR-PLA-L
+HR-PLB-R,make,structure,6061-T6,"waterjet 12 mm plate + CNC Ø42 H7 bore, stop slot",1,0.3772,Ø42 H7 bearing bore coaxial with actuator axis ≤0.05; slot range +-2 deg,preliminary,mirror of HR-PLB-L
+HR-PBR-R,make,structure,6061-T6,CNC 3-axis block (pocketed),1,0.3091,"4xØ6.6 on 44 sq, ±0.05",preliminary,mirror of HR-PBR-L
+HR-ARA-R,make,structure,6061-T6,waterjet 8 mm + CNC spigot/PCD,1,0.1656,Ø21 g6 spigot; 6xØ4.5 on Ø28 PCD,preliminary,mirror of HR-ARA-L
+HR-ARB-R,make,structure,6061-T6,waterjet 8 mm + CNC Ø20 N7 press bore,1,0.1566,Ø20 N7 shaft bore coaxial ≤0.05 with arm A' spigot (line-bore in assembly),preliminary,mirror of HR-ARB-L
+HR-DBR-R,make,structure,6061-T6,CNC 3-axis block,1,0.185,4xØ6.6 on 44 sq,preliminary,mirror of HR-DBR-L
+HR-SFT-R,make,structure,42CrMo4,"turned + ground Ø20 k6, circlip groove",1,0.0555,Ø20 k6 bearing seat; groove DIN 471,preliminary,mirror of HR-SFT-L
+HR-SPC-R,make,structure,steel,turned,1,0.0017,1.0 ±0.02 thick,preliminary,mirror of HR-SPC-L
+HR-CAP-R,make,structure,6061-T6,turned,1,0.0131,3xØ4.4 on Ø50,preliminary,mirror of HR-CAP-L
+HR-PIN-R,buy,structure,steel,"buy ISO 8734 Ø6 dowel, cut",1,0.0041,Ø6 m6 hardened,preliminary,mirror of HR-PIN-L
+HR-BRG-R,buy,envelope-purchased,steel,purchased,1,0.0656,SKF 6004-2RSH (or eq.) 20x42x12,envelope,mirror of HR-BRG-L
+HR-CLP-R,buy,envelope-purchased,steel,purchased DIN 471 20x1.2,1,0.002,DIN 471 20x1.2 retaining ring; groove not modelled,envelope,mirror of HR-CLP-L
+HR-ACT-R,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope from datasheet,envelope,mirror of HR-ACT-L
+SHIN-TUBE-R,make,structure,6061-T6,saw-cut tube + drill Ø6 H7 cross holes (jig),1,0.1723,length 184.0 ±0.2; cross holes ⟂ ±0.1,preliminary,mirror of SHIN-TUBE-L
+THIGH-TUBE-R,make,structure,6061-T6,saw-cut tube + drill Ø6 H7 cross holes (jig),1,0.1893,length 202.0 ±0.2; cross holes ⟂ ±0.1,preliminary,mirror of THIGH-TUBE-L
+FOOT-PLATE-R,make,structure,6061-T6,waterjet 10 mm plate,1,0.5569,4xØ6.6 on 44 sq; flatness 0.2,preliminary,mirror of FOOT-PLATE-L
+HY-OUT-R,make,structure,6061-T6,CNC plate 10 mm + Ø21 g6 spigot,1,0.0917,Ø21 g6 spigot; 6xØ4.5 on Ø28; 4xØ6.6 on 44 sq,preliminary,mirror of HY-OUT-L
+HY-ACT-R,buy,envelope-purchased,steel,purchased,1,0.85,AK80-64 envelope,envelope,mirror of HY-ACT-L
+AR-RCAP-R,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,mirror of AR-RCAP-L
+AR-BCOV-R,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,mirror of AR-BCOV-L
+AP-RCAP-R,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,mirror of AP-RCAP-L
+AP-BCOV-R,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,mirror of AP-BCOV-L
+KN-BCOV-R,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,mirror of KN-BCOV-L
+HP-RCAP-R,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,mirror of HP-RCAP-L
+HP-BCOV-R,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,mirror of HP-BCOV-L
+HR-RCAP-R,make,printed,PETG,FDM print,1,0.0443,M3 bosses on Ø100; cable notch + zip-tie bridge,preliminary,mirror of HR-RCAP-L
+HR-BCOV-R,make,printed,PETG,FDM print,1,0.0299,snap/glue to cap; TBD,preliminary,mirror of HR-BCOV-L
+PELVIS-PLATE,make,structure,6061-T6,waterjet 8 mm + CNC Ø80.4 bores,1,0.9427,2x Ø80.4 H8 at ±110 ±0.05; 16x Ø3.2 on Ø85 PCD,preliminary,hardware/lower_body/step/PELVIS-PLATE.step
+"ISO 4762 M3 12.9 (actuator rear, length TBD)",buy,fastener,steel 12.9,purchased,80,,length/torque per assembly drawing (NOT yet issued),estimated count,hole features
+"ISO 4762 M4 12.9 (actuator output, length TBD)",buy,fastener,steel 12.9,purchased,60,,length/torque per assembly drawing (NOT yet issued),estimated count,hole features
+ISO 4762 M4 (bearing cap),buy,fastener,steel 12.9,purchased,30,,length/torque per assembly drawing (NOT yet issued),estimated count,hole features
+ISO 4762 M5 12.9 (bridge-plate/arm),buy,fastener,steel 12.9,purchased,80,,length/torque per assembly drawing (NOT yet issued),estimated count,hole features
+ISO 4762 M3 (printed rear cap),buy,fastener,steel 12.9,purchased,30,,length/torque per assembly drawing (NOT yet issued),estimated count,hole features
+"ISO 4762 M6 12.9 (module interfaces, clamps)",buy,fastener,steel 12.9,purchased,52,,torque TBD,estimated count,hole features

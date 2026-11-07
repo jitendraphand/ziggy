@@ -1,0 +1,1409 @@
+{
+ "version": "0.2.0",
+ "date": "2026-11-07",
+ "runtime_s": 205.9,
+ "counts": {
+  "instances": 159,
+  "unique_left_or_center": 80,
+  "by_kind": {
+   "structure": 109,
+   "envelope-purchased": 32,
+   "printed": 18
+  }
+ },
+ "levels_mm": {
+  "sole": 0,
+  "ankle_roll": 92.0,
+  "ankle_pitch": 244.0,
+  "knee": 540.0,
+  "hip_pitch": 870.0,
+  "hip_roll": 1022.0,
+  "yaw_face": 1108.0,
+  "pelvis_plate_bottom": 1161.9
+ },
+ "interference": {
+  "pairs_checked": 12561,
+  "interferences": [],
+  "contacts_le_1mm3": 0
+ },
+ "joint_sweep_left": {
+  "hip_yaw": {
+   "range_deg": [
+    -30,
+    30
+   ],
+   "samples": 7,
+   "collisions": [],
+   "hard_stop": null
+  },
+  "hip_roll": {
+   "range_deg": [
+    -25,
+    45
+   ],
+   "samples": 9,
+   "collisions": [
+    {
+     "angle": -25.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 1238.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 51.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 1433.5
+    },
+    {
+     "angle": -25.0,
+     "moving": "AR-PBR-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 4122.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-PLA-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 4248.1
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-PLA-L",
+     "fixed": "AP-ARA-R",
+     "vol_mm3": 7066.8
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-PLA-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 2927.6
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-PLA-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 3044.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-PBR-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 384.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-PBR-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 3648.8
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-ARA-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 14.1
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-ARA-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 4721.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-ARA-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 24092.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-DBR-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 3112.6
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 35612.1
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-ARA-R",
+     "vol_mm3": 20322.7
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 109438.5
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-ACT-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 3526.6
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-PLB-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 11053.3
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-PLB-L",
+     "fixed": "KN-ARA-R",
+     "vol_mm3": 2327.5
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-PLB-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 17504.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-PLB-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 7714.3
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-PBR-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 1752.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARA-L",
+     "fixed": "KN-PLB-R",
+     "vol_mm3": 14764.1
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARA-L",
+     "fixed": "KN-ARB-R",
+     "vol_mm3": 7862.5
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARA-L",
+     "fixed": "KN-SFT-R",
+     "vol_mm3": 2189.3
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARA-L",
+     "fixed": "KN-SPC-R",
+     "vol_mm3": 93.8
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARA-L",
+     "fixed": "KN-BRG-R",
+     "vol_mm3": 1760.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARA-L",
+     "fixed": "KN-BCOV-R",
+     "vol_mm3": 678.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARB-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 3100.1
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARB-L",
+     "fixed": "KN-ARA-R",
+     "vol_mm3": 9345.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARB-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 16019.0
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ARB-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 1200.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-DBR-L",
+     "fixed": "KN-ARA-R",
+     "vol_mm3": 13852.0
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-DBR-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 7583.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-SFT-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 234.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-SFT-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 5.8
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-SPC-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 1.0
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-CAP-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 1472.0
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-CAP-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 1057.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-PIN-L",
+     "fixed": "KN-ARA-R",
+     "vol_mm3": 249.6
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-PIN-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 120.7
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-BRG-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 3033.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-BRG-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 4.0
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-BRG-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 749.4
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-CLP-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 37.0
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-PLB-R",
+     "vol_mm3": 45207.3
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-ARB-R",
+     "vol_mm3": 12566.7
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-SFT-R",
+     "vol_mm3": 4751.7
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-SPC-R",
+     "vol_mm3": 123.0
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-CAP-R",
+     "vol_mm3": 4839.4
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-PIN-R",
+     "vol_mm3": 256.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-BRG-R",
+     "vol_mm3": 11095.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-CLP-R",
+     "vol_mm3": 310.1
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-ACT-L",
+     "fixed": "KN-BCOV-R",
+     "vol_mm3": 21583.9
+    },
+    {
+     "angle": -25.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "KN-ARA-R",
+     "vol_mm3": 4174.8
+    },
+    {
+     "angle": -25.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "KN-DBR-R",
+     "vol_mm3": 3614.6
+    },
+    {
+     "angle": -25.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 2720.3
+    },
+    {
+     "angle": -25.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 486.2
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-RCAP-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 2536.8
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-RCAP-L",
+     "fixed": "AP-ARA-R",
+     "vol_mm3": 1157.4
+    },
+    {
+     "angle": -25.0,
+     "moving": "AP-RCAP-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 386.7
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-BCOV-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 1514.4
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-BCOV-L",
+     "fixed": "KN-ACT-R",
+     "vol_mm3": 7923.5
+    },
+    {
+     "angle": -25.0,
+     "moving": "KN-BCOV-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 196.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PLA-L",
+     "fixed": "AR-PLA-R",
+     "vol_mm3": 6296.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AR-PLB-R",
+     "vol_mm3": 9561.9
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 1290.7
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 281.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 1385.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PBR-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 3139.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PBR-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 57626.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AR-PBR-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 136.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLA-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 9614.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLA-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 4460.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLA-L",
+     "fixed": "AP-PIN-R",
+     "vol_mm3": 21.2
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLA-L",
+     "fixed": "AP-BCOV-R",
+     "vol_mm3": 184.2
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 16928.3
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 10982.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 4555.7
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 479.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PBR-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 3670.6
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PBR-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 2378.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PBR-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 3755.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ARA-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 1231.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ARA-L",
+     "fixed": "AP-ARA-R",
+     "vol_mm3": 8591.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ARA-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 119.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ARA-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 624.6
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 58.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 5988.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 24835.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-DBR-L",
+     "fixed": "AP-ARA-R",
+     "vol_mm3": 2125.8
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-DBR-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 64236.3
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 1138.3
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 3854.6
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 1.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-SPC-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 134.8
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-SPC-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 2.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-CAP-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 1629.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-CAP-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 1443.9
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-CAP-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 122.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-PIN-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 420.7
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 3172.9
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 7205.7
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-ACT-R",
+     "vol_mm3": 524.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-CLP-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 233.8
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-CLP-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 76.3
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 45968.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 17622.7
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 27895.6
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-SFT-R",
+     "vol_mm3": 4169.2
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-SPC-R",
+     "vol_mm3": 215.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-CAP-R",
+     "vol_mm3": 164.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-BRG-R",
+     "vol_mm3": 4888.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 1513.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-ACT-L",
+     "fixed": "AP-BCOV-R",
+     "vol_mm3": 730.9
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-PLB-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 23094.9
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-PLB-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 577.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-ARA-L",
+     "fixed": "KN-BCOV-R",
+     "vol_mm3": 2158.6
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-ARB-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 1880.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-DBR-L",
+     "fixed": "KN-PLB-R",
+     "vol_mm3": 10848.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-DBR-L",
+     "fixed": "KN-ARB-R",
+     "vol_mm3": 5522.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-DBR-L",
+     "fixed": "KN-BCOV-R",
+     "vol_mm3": 869.4
+    },
+    {
+     "angle": -20.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "KN-PLB-R",
+     "vol_mm3": 2339.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "KN-ARB-R",
+     "vol_mm3": 4037.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "KN-DBR-R",
+     "vol_mm3": 4494.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "KN-PIN-R",
+     "vol_mm3": 14.2
+    },
+    {
+     "angle": -20.0,
+     "moving": "SHIN-TUBE-L",
+     "fixed": "SHIN-TUBE-R",
+     "vol_mm3": 8729.1
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-RCAP-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 4452.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-RCAP-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 1390.2
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-RCAP-L",
+     "fixed": "AP-PIN-R",
+     "vol_mm3": 272.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-RCAP-L",
+     "fixed": "AP-BCOV-R",
+     "vol_mm3": 1918.5
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-BCOV-L",
+     "fixed": "AP-PLA-R",
+     "vol_mm3": 809.6
+    },
+    {
+     "angle": -20.0,
+     "moving": "AP-BCOV-L",
+     "fixed": "AP-RCAP-R",
+     "vol_mm3": 1583.8
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-BCOV-L",
+     "fixed": "KN-PBR-R",
+     "vol_mm3": 1585.0
+    },
+    {
+     "angle": -20.0,
+     "moving": "KN-BCOV-L",
+     "fixed": "THIGH-TUBE-R",
+     "vol_mm3": 612.1
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-PLA-L",
+     "fixed": "AR-PLA-R",
+     "vol_mm3": 13417.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-PLA-L",
+     "fixed": "AR-ACT-R",
+     "vol_mm3": 8710.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AR-PLB-R",
+     "vol_mm3": 47057.3
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AR-SFT-R",
+     "vol_mm3": 859.1
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-PLB-L",
+     "fixed": "AR-BRG-R",
+     "vol_mm3": 4765.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-PBR-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 198.6
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-ARA-L",
+     "fixed": "AR-ARA-R",
+     "vol_mm3": 10997.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-ARB-L",
+     "fixed": "AR-ARB-R",
+     "vol_mm3": 10997.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-DBR-L",
+     "fixed": "AR-DBR-R",
+     "vol_mm3": 669.4
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-SFT-L",
+     "fixed": "AR-PLB-R",
+     "vol_mm3": 1289.6
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-PIN-L",
+     "fixed": "AR-PLB-R",
+     "vol_mm3": 146.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-BRG-L",
+     "fixed": "AR-PLB-R",
+     "vol_mm3": 5751.7
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-ACT-L",
+     "fixed": "AR-PLA-R",
+     "vol_mm3": 12114.1
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-ACT-L",
+     "fixed": "AR-ACT-R",
+     "vol_mm3": 95909.3
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 63855.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 749.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 19149.5
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-SFT-R",
+     "vol_mm3": 1273.4
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-SPC-R",
+     "vol_mm3": 30.5
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-PIN-R",
+     "vol_mm3": 80.9
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PLB-L",
+     "fixed": "AP-BRG-R",
+     "vol_mm3": 78.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 25206.7
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 10662.9
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-SFT-R",
+     "vol_mm3": 2470.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-SPC-R",
+     "vol_mm3": 28.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-CAP-R",
+     "vol_mm3": 187.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-PIN-R",
+     "vol_mm3": 229.7
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-BRG-R",
+     "vol_mm3": 6571.3
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-ARB-L",
+     "fixed": "AP-BCOV-R",
+     "vol_mm3": 345.4
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-DBR-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 8723.3
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-DBR-L",
+     "fixed": "AP-BCOV-R",
+     "vol_mm3": 1518.6
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 1512.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 2522.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-SFT-R",
+     "vol_mm3": 93.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-SPC-R",
+     "vol_mm3": 27.1
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-CAP-R",
+     "vol_mm3": 187.9
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SFT-L",
+     "fixed": "AP-BRG-R",
+     "vol_mm3": 2160.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SPC-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 111.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SPC-L",
+     "fixed": "AP-SFT-R",
+     "vol_mm3": 30.6
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-SPC-L",
+     "fixed": "AP-BRG-R",
+     "vol_mm3": 70.1
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-CAP-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 1021.7
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PIN-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 227.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PIN-L",
+     "fixed": "AP-SFT-R",
+     "vol_mm3": 2.5
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PIN-L",
+     "fixed": "AP-SPC-R",
+     "vol_mm3": 8.7
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-PIN-L",
+     "fixed": "AP-BRG-R",
+     "vol_mm3": 177.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-PLB-R",
+     "vol_mm3": 3172.5
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 5972.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-SFT-R",
+     "vol_mm3": 1579.1
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-SPC-R",
+     "vol_mm3": 70.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-BRG-L",
+     "fixed": "AP-BRG-R",
+     "vol_mm3": 485.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-CLP-L",
+     "fixed": "AP-ARB-R",
+     "vol_mm3": 146.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "FOOT-PLATE-L",
+     "fixed": "AR-PLA-R",
+     "vol_mm3": 452.6
+    },
+    {
+     "angle": -10.0,
+     "moving": "FOOT-PLATE-L",
+     "fixed": "AR-PLB-R",
+     "vol_mm3": 678.9
+    },
+    {
+     "angle": -10.0,
+     "moving": "FOOT-PLATE-L",
+     "fixed": "AR-ARA-R",
+     "vol_mm3": 3276.7
+    },
+    {
+     "angle": -10.0,
+     "moving": "FOOT-PLATE-L",
+     "fixed": "AR-ARB-R",
+     "vol_mm3": 1600.0
+    },
+    {
+     "angle": -10.0,
+     "moving": "FOOT-PLATE-L",
+     "fixed": "AR-DBR-R",
+     "vol_mm3": 18310.2
+    },
+    {
+     "angle": -10.0,
+     "moving": "FOOT-PLATE-L",
+     "fixed": "AR-RCAP-R",
+     "vol_mm3": 349.3
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-RCAP-L",
+     "fixed": "AR-RCAP-R",
+     "vol_mm3": 5734.4
+    },
+    {
+     "angle": -10.0,
+     "moving": "AR-BCOV-L",
+     "fixed": "AR-BCOV-R",
+     "vol_mm3": 4325.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "AP-BCOV-L",
+     "fixed": "AP-PBR-R",
+     "vol_mm3": 2882.8
+    },
+    {
+     "angle": -10.0,
+     "moving": "KN-BCOV-L",
+     "fixed": "KN-BCOV-R",
+     "vol_mm3": 3365.7
+    }
+   ],
+   "hard_stop": {
+    "lo-4": 30.7,
+    "lo": 0.0,
+    "hi": 0.0,
+    "hi+4": 30.7,
+    "engages_beyond_range": true,
+    "free_within_range": true
+   }
+  },
+  "hip_pitch": {
+   "range_deg": [
+    -110,
+    30
+   ],
+   "samples": 15,
+   "collisions": [],
+   "hard_stop": {
+    "lo-4": 30.7,
+    "lo": 0.0,
+    "hi": 0.0,
+    "hi+4": 30.7,
+    "engages_beyond_range": true,
+    "free_within_range": true
+   }
+  },
+  "knee": {
+   "range_deg": [
+    0,
+    130
+   ],
+   "samples": 14,
+   "collisions": [],
+   "hard_stop": {
+    "lo-4": 30.7,
+    "lo": 0.0,
+    "hi": 0.0,
+    "hi+4": 30.7,
+    "engages_beyond_range": true,
+    "free_within_range": true
+   }
+  },
+  "ankle_pitch": {
+   "range_deg": [
+    -40,
+    40
+   ],
+   "samples": 9,
+   "collisions": [],
+   "hard_stop": {
+    "lo-4": 30.7,
+    "lo": 0.0,
+    "hi": 0.0,
+    "hi+4": 30.7,
+    "engages_beyond_range": true,
+    "free_within_range": true
+   }
+  },
+  "ankle_roll": {
+   "range_deg": [
+    -20,
+    20
+   ],
+   "samples": 5,
+   "collisions": [],
+   "hard_stop": {
+    "lo-4": 30.7,
+    "lo": 0.0,
+    "hi": 0.0,
+    "hi+4": 30.7,
+    "engages_beyond_range": true,
+    "free_within_range": true
+   }
+  }
+ },
+ "printed_fit": {
+  "envelope_mm": [
+   400.0,
+   400.0,
+   470.0
+  ],
+  "parts": {
+   "AR-RCAP-L": [
+    108.3,
+    22.4,
+    108.2
+   ],
+   "AR-BCOV-L": [
+    100.0,
+    12.3,
+    100.3
+   ],
+   "AP-RCAP-L": [
+    108.3,
+    22.4,
+    108.2
+   ],
+   "AP-BCOV-L": [
+    100.0,
+    12.3,
+    100.3
+   ],
+   "KN-BCOV-L": [
+    100.0,
+    12.3,
+    100.3
+   ],
+   "HP-RCAP-L": [
+    108.3,
+    22.4,
+    108.2
+   ],
+   "HP-BCOV-L": [
+    100.0,
+    12.3,
+    100.3
+   ],
+   "HR-RCAP-L": [
+    108.3,
+    22.4,
+    108.2
+   ],
+   "HR-BCOV-L": [
+    100.0,
+    12.3,
+    100.3
+   ]
+  },
+  "fits": {
+   "AR-RCAP-L": true,
+   "AR-BCOV-L": true,
+   "AP-RCAP-L": true,
+   "AP-BCOV-L": true,
+   "KN-BCOV-L": true,
+   "HP-RCAP-L": true,
+   "HP-BCOV-L": true,
+   "HR-RCAP-L": true,
+   "HR-BCOV-L": true
+  }
+ },
+ "mass": {
+  "structure_kg": 18.59,
+  "purchased_known_kg": 12.02,
+  "printed_kg": 0.65,
+  "fasteners_wiring_kg": null,
+  "note": "fasteners, wiring, encoders, elastomer bumpers NOT included (unknown)",
+  "total_known_kg": 31.26,
+  "sim_v0.1_lower_body_budget_kg": 22.0
+ },
+ "cad_vs_sim": {
+  "ankle_roll": {
+   "cad_mm": 92.0,
+   "sim_mm": 70.0,
+   "delta_mm": 22.0
+  },
+  "ankle_pitch": {
+   "cad_mm": 244.0,
+   "sim_mm": 70.0,
+   "delta_mm": 174.0
+  },
+  "knee": {
+   "cad_mm": 540.0,
+   "sim_mm": 470.0,
+   "delta_mm": 70.0
+  },
+  "hip_pitch": {
+   "cad_mm": 870.0,
+   "sim_mm": 870.0,
+   "delta_mm": -0.0
+  },
+  "hip_roll": {
+   "cad_mm": 1022.0,
+   "sim_mm": 870.0,
+   "delta_mm": 152.0
+  },
+  "yaw_face": {
+   "cad_mm": 1108.0,
+   "sim_mm": 870.0,
+   "delta_mm": 238.0
+  }
+ }
+}

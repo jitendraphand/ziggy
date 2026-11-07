@@ -70,5 +70,15 @@
   "statement": "Tendon hand grasps household objects",
   "status": "untested",
   "evidence": []
+ },
+ {
+  "id": "LOWER_BODY_V02",
+  "statement": "Integrated lower-body CAD with interference, joint-sweep, print-fit and mass evidence; 2/11 engineering gates pass, manufacturing release blocked",
+  "status": "designed",
+  "evidence": [
+   "docs/validation/lower_body_v0.2.json",
+   "docs/ENGINEERING_GATES.md",
+   "tests/test_lower_body.py"
+  ]
  }
 ]

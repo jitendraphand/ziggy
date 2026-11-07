@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
-# ZIGGY: open-source full-size household humanoid (v0.1 engineering prototype)
+# ZIGGY: open-source full-size household humanoid (v0.2 engineering prototype)
 
-ZIGGY is a ~1.65 m, ~46 kg (provisional) humanoid for household manipulation research, with
+ZIGGY is a humanoid targeting ~1.65 m and ~46 kg (provisional; the v0.2 lower-body CAD currently packages to 1.87 m and is over mass) for household manipulation research, with
 parametric CAD, separate STEP/STL files for every printed part (each fits an **ELEGOO Neptune 4 Max**),
 a MuJoCo model, IK and standing-stability tests, a BOM, a wiring architecture and a recursive QA loop.
 
@@ -21,6 +21,18 @@ a MuJoCo model, IK and standing-stability tests, a BOM, a wiring architecture an
 
 Details, assumptions and limits: [docs/SIMULATION.md](docs/SIMULATION.md) and [docs/ASSEMBLY.md](docs/ASSEMBLY.md). Metrics: [media/metrics.json](media/metrics.json).
 Simulated actuators are ideal and clamped at peak torque, so these results are optimistic. **Walking is not implemented.**
+
+## v0.2 lower body (preliminary; manufacturing release blocked: 2/11 gates pass)
+| Assembled (front + 3/4) | Exploded |
+|---|---|
+| ![lb](media/v02_lower_body_assembled.png) | ![lbx](media/v02_lower_body_exploded.png) |
+| **Knee module close-up** | **Full-body packaging (1870 mm, over target)** |
+| ![knee](media/v02_knee_module.png) | ![pk](media/v02_full_body_packaging.png) |
+
+Read [LOWER_BODY](docs/LOWER_BODY.md), [ENGINEERING_GATES](docs/ENGINEERING_GATES.md), [HAND_CALCS](docs/HAND_CALCS.md), [VERIFICATION](docs/VERIFICATION.md),
+[BENCHMARKING](docs/BENCHMARKING.md), [DESIGN_REVIEW](docs/DESIGN_REVIEW.md) and [ENGINEERING_STATUS](docs/ENGINEERING_STATUS.md).
+Regenerate everything with `python tools/qa.py`, or run the steps on their own: `python tools/lower_body_qa.py && python tools/hand_calcs.py && python tools/engineering_gates.py && python tools/lower_body_views.py`.
+Known blockers: no RobStride 04 mount drawing (adapters undrilled) · collapses when de-energized · over mass and stature · CAD and sim not yet synced.
 
 ## What's here
 

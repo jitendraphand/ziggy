@@ -1,0 +1,109 @@
+[
+ {
+  "id": "G-01",
+  "gate": "Static interference (all pairs, >1 mm^3) = 0",
+  "status": "PASS",
+  "evidence": "docs/validation/lower_body_v0.2.json",
+  "detail": "12561 pairs"
+ },
+ {
+  "id": "G-02",
+  "gate": "Joint travel sweep (left leg, 10 deg steps + limits) collision-free",
+  "status": "FAIL",
+  "evidence": "joint_sweep_left",
+  "detail": {
+   "hip_yaw": 0,
+   "hip_roll": 197,
+   "hip_pitch": 0,
+   "knee": 0,
+   "ankle_pitch": 0,
+   "ankle_roll": 0
+  }
+ },
+ {
+  "id": "G-03",
+  "gate": "Mechanical hard stop on every leg joint (engages at limit+4 deg, free inside range)",
+  "status": "FAIL",
+  "evidence": "joint_sweep_left.hard_stop",
+  "detail": {
+   "hip_yaw": false,
+   "hip_roll": true,
+   "hip_pitch": true,
+   "knee": true,
+   "ankle_pitch": true,
+   "ankle_roll": true
+  }
+ },
+ {
+  "id": "G-04",
+  "gate": "Printed parts fit Neptune 4 Max envelope",
+  "status": "PASS",
+  "evidence": "printed_fit",
+  "detail": 9
+ },
+ {
+  "id": "G-05",
+  "gate": "Hand calcs: all checks meet required SF",
+  "status": "FAIL",
+  "evidence": "docs/HAND_CALCS.md",
+  "detail": [
+   "HC-04",
+   "HC-06",
+   "HC-09",
+   "HC-14",
+   "HC-16"
+  ]
+ },
+ {
+  "id": "G-06",
+  "gate": "Lower-body CAD mass <= sim v0.1 lower-body budget",
+  "status": "FAIL",
+  "evidence": "mass",
+  "detail": "31.26 kg vs 22.0 kg (fasteners/wiring excluded)"
+ },
+ {
+  "id": "G-07",
+  "gate": "CAD joint heights match sim within 10 mm",
+  "status": "FAIL",
+  "evidence": "cad_vs_sim",
+  "detail": {
+   "ankle_roll": 22.0,
+   "ankle_pitch": 174.0,
+   "knee": 70.0,
+   "hip_pitch": -0.0,
+   "hip_roll": 152.0,
+   "yaw_face": 238.0
+  }
+ },
+ {
+  "id": "G-08",
+  "gate": "Stature within provisional target 1650-1700 mm",
+  "status": "FAIL",
+  "evidence": "media/v02_packaging.json",
+  "detail": 1870.0
+ },
+ {
+  "id": "G-09",
+  "gate": "No open interface blockers (vendor drawings)",
+  "status": "FAIL",
+  "evidence": "hardware/lower_body/manifest.json",
+  "detail": [
+   "BLOCKER: RobStride 04 flange/mount drawing not obtained; adapter holes NOT drilled",
+   "BLOCKER: hip yaw relies on actuator output bearing for leg moments; AK80-64 moment rating not published"
+  ]
+ },
+ {
+  "id": "G-10",
+  "gate": "Physical verification (print/fit/load/stop/E-stop tests) recorded",
+  "status": "FAIL",
+  "evidence": "none",
+  "detail": "no hardware built"
+ },
+ {
+  "id": "G-11",
+  "gate": "Self-collision / leg-to-leg sweep for all joints",
+  "status": "FAIL",
+  "evidence": "joint_sweep_left",
+  "detail": "opposite leg only checked for hip yaw/roll"
+ }
+]
