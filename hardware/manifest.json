@@ -143,34 +143,34 @@
       "material": "PETG",
       "qty": 1,
       "load_class": "cover",
-      "print_orientation": "open side down, tall",
+      "print_orientation": "standing on 340x110 edge, open face vertical, brim",
       "bbox_mm": [
         340.0,
         110.0,
         440.0
       ],
-      "volume_cm3": 995.52,
+      "volume_cm3": 751.57,
       "valid_brep": true,
       "step": "hardware/step/torso_shell_front.step",
       "stl": "hardware/stl/torso_shell_front.stl",
-      "stl_sha256": "2451e5b776d58dfdd7bd9bd12bd96b2d622f79a601511b6db6af54398d5b1620"
+      "stl_sha256": "336af81941cf16a4d57899af2715f4b1dbeb36ea3f9ef16890e7aa93fdfe7a14"
     },
     {
       "name": "torso_shell_back",
       "material": "PETG",
       "qty": 1,
       "load_class": "cover",
-      "print_orientation": "open side down, tall",
+      "print_orientation": "standing on 340x110 edge, open face vertical, brim",
       "bbox_mm": [
         340.0,
         110.0,
         440.0
       ],
-      "volume_cm3": 995.52,
+      "volume_cm3": 751.57,
       "valid_brep": true,
       "step": "hardware/step/torso_shell_back.step",
       "stl": "hardware/stl/torso_shell_back.stl",
-      "stl_sha256": "2451e5b776d58dfdd7bd9bd12bd96b2d622f79a601511b6db6af54398d5b1620"
+      "stl_sha256": "336af81941cf16a4d57899af2715f4b1dbeb36ea3f9ef16890e7aa93fdfe7a14"
     },
     {
       "name": "pelvis_cover",

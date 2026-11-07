@@ -1,10 +1,74 @@
 [
-  {"id": "IK", "statement": "Arm position IK converges on reachable targets within joint limits", "status": "simulated", "evidence": ["tests/test_ik.py"]},
-  {"id": "STAND", "statement": "Quasi-static PD standing on flat ground in MuJoCo", "status": "simulated", "evidence": ["tests/test_balance.py"]},
-  {"id": "PRINT_FIT", "statement": "Every printed part fits Neptune 4 Max with 10 mm clearance", "status": "designed", "evidence": ["tests/test_cad.py"]},
-  {"id": "PRINT_QUALITY", "statement": "Parts print and fit on real hardware", "status": "untested", "evidence": []},
-  {"id": "WALK", "statement": "Walking / dynamic balance", "status": "untested", "evidence": []},
-  {"id": "STRUCT", "statement": "Structural adequacy of load path", "status": "untested", "evidence": []},
-  {"id": "SAFE_HOME", "statement": "Safe for unsupervised household use", "status": "untested", "evidence": []},
-  {"id": "HAND_GRASP", "statement": "Tendon hand grasps household objects", "status": "untested", "evidence": []}
+ {
+  "id": "IK",
+  "statement": "Arm position IK converges on reachable targets within joint limits",
+  "status": "simulated",
+  "evidence": [
+   "tests/test_ik.py"
+  ]
+ },
+ {
+  "id": "STAND",
+  "statement": "Quasi-static PD standing on flat ground in MuJoCo",
+  "status": "simulated",
+  "evidence": [
+   "tests/test_balance.py"
+  ]
+ },
+ {
+  "id": "PUSH_SIM",
+  "statement": "Simulated push recovery with ankle-strategy controller (idealized actuators, true CoM)",
+  "status": "simulated",
+  "evidence": [
+   "tests/test_sim.py",
+   "media/metrics.json"
+  ]
+ },
+ {
+  "id": "CAD_ASSEMBLY_VIEW",
+  "statement": "Assembled/exploded views of printed parts at schematic positions",
+  "status": "designed",
+  "evidence": [
+   "hardware/assembly.json",
+   "tools/cad_views.py"
+  ]
+ },
+ {
+  "id": "PRINT_FIT",
+  "statement": "Every printed part fits Neptune 4 Max with 10 mm clearance",
+  "status": "designed",
+  "evidence": [
+   "tests/test_cad.py"
+  ]
+ },
+ {
+  "id": "PRINT_QUALITY",
+  "statement": "Parts print and fit on real hardware",
+  "status": "untested",
+  "evidence": []
+ },
+ {
+  "id": "WALK",
+  "statement": "Walking / dynamic balance",
+  "status": "untested",
+  "evidence": []
+ },
+ {
+  "id": "STRUCT",
+  "statement": "Structural adequacy of load path",
+  "status": "untested",
+  "evidence": []
+ },
+ {
+  "id": "SAFE_HOME",
+  "statement": "Safe for unsupervised household use",
+  "status": "untested",
+  "evidence": []
+ },
+ {
+  "id": "HAND_GRASP",
+  "statement": "Tendon hand grasps household objects",
+  "status": "untested",
+  "evidence": []
+ }
 ]

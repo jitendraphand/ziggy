@@ -9,7 +9,7 @@
 | 4 | Finger servo selection, extensor return, hand sensing | grasping untested |
 | 5 | Linkage ankle (v0.2) | reduces distal leg mass |
 | 6 | CAD mass and inertia rollup to replace MJCF estimates | sim fidelity |
-| 7 | Walking controller (MPC/WBC), state estimation | **no walking or dynamic balance yet** |
+| 7 | Walking controller (MPC/WBC), stepping recovery, state estimation | **no walking; only a simulated standing ankle strategy (docs/SIMULATION.md)** |
 | 8 | Whole-body IK including legs and squatting; reach to a 0.75 m table and the floor | QA shows these targets are unreachable standing |
 | 9 | Firmware: CAN drivers, safety MCU heartbeat, category-1 stop | safety |
 | 10 | Head sensors (stereo/RGB-D), mic, speaker | household perception |

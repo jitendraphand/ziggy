@@ -1,0 +1,1142 @@
+{
+ "ik_household": {
+  "kitchen_counter_0.90m": {
+   "error_mm": 0.47,
+   "reached": true,
+   "used_waist": false,
+   "within_limits": true
+  },
+  "dining_table_0.75m": {
+   "error_mm": 45.49,
+   "reached": false,
+   "used_waist": true,
+   "within_limits": true
+  },
+  "upper_shelf_1.40m": {
+   "error_mm": 0.06,
+   "reached": true,
+   "used_waist": true,
+   "within_limits": true
+  },
+  "door_handle_1.00m": {
+   "error_mm": 0.03,
+   "reached": true,
+   "used_waist": true,
+   "within_limits": true
+  },
+  "light_switch_1.20m": {
+   "error_mm": 0.18,
+   "reached": true,
+   "used_waist": false,
+   "within_limits": true
+  },
+  "floor_pickup_0.10m": {
+   "error_mm": 689.64,
+   "reached": false,
+   "used_waist": true,
+   "within_limits": true
+  }
+ },
+ "push_clips": {
+  "pd_150N": {
+   "controller": "pd",
+   "push_n": 150,
+   "push_dt_s": 0.1,
+   "impulse_ns": 15.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 0,
+   "duration_s": 4.0,
+   "fell": false,
+   "t_fall_s": null,
+   "survived": true,
+   "recovered": false,
+   "settle_time_s": 2.901999999999781,
+   "max_com_disp_mm": 69.96767439047966,
+   "final_com_disp_mm": 13.60217178695855,
+   "min_contact_margin_mm": 31.72029476733234,
+   "final_contact_margin_mm": 102.78008615483753,
+   "max_saturated_actuators": 0,
+   "foot_slip_mm": 0.6413343334751758,
+   "min_feet_in_contact": 2
+  },
+  "ankle_250N": {
+   "controller": "ankle",
+   "push_n": 250,
+   "push_dt_s": 0.1,
+   "impulse_ns": 25.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 0,
+   "duration_s": 4.0,
+   "fell": false,
+   "t_fall_s": null,
+   "survived": true,
+   "recovered": true,
+   "settle_time_s": 1.3519999999999515,
+   "max_com_disp_mm": 84.53078881984143,
+   "final_com_disp_mm": 0.19786127762415626,
+   "min_contact_margin_mm": 65.45091848100478,
+   "final_contact_margin_mm": 90.32096964948067,
+   "max_saturated_actuators": 0,
+   "foot_slip_mm": 1.297353343068536,
+   "min_feet_in_contact": 2
+  },
+  "ankle_300N_fall": {
+   "controller": "ankle",
+   "push_n": 300,
+   "push_dt_s": 0.1,
+   "impulse_ns": 30.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 0,
+   "duration_s": 4.0,
+   "fell": true,
+   "t_fall_s": 2.3879999999999586,
+   "survived": false,
+   "recovered": false,
+   "settle_time_s": null,
+   "max_com_disp_mm": 1423.171056082438,
+   "final_com_disp_mm": 1385.0216121872236,
+   "min_contact_margin_mm": -1000.0,
+   "final_contact_margin_mm": -218.94306177350092,
+   "max_saturated_actuators": 4,
+   "foot_slip_mm": 573.1132170031431,
+   "min_feet_in_contact": 0
+  }
+ },
+ "sweep_sagittal": [
+  {
+   "controller": "pd",
+   "direction": [
+    1,
+    0
+   ],
+   "max_survived_n": 175.0,
+   "max_recovered_n": 0.0,
+   "first_fall_n": 200.0,
+   "rows": [
+    {
+     "controller": "pd",
+     "push_n": 0.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 0.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1.7735779284767708,
+     "final_com_disp_mm": 0.37534826119087905,
+     "min_contact_margin_mm": 89.26219305596567,
+     "final_contact_margin_mm": 90.19937735543806,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.04215721505471115,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 25.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 2.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": false,
+     "settle_time_s": 0.6900000000000013,
+     "max_com_disp_mm": 11.822864143102642,
+     "final_com_disp_mm": 2.018587275179398,
+     "min_contact_margin_mm": 81.0811467136238,
+     "final_contact_margin_mm": 91.74050833562781,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.06506058500534155,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 50.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 5.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": false,
+     "settle_time_s": 2.3519999999998413,
+     "max_com_disp_mm": 23.380276356755278,
+     "final_com_disp_mm": 4.555450167239045,
+     "min_contact_margin_mm": 71.31062163666617,
+     "final_contact_margin_mm": 94.17023118961522,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.1787255650109649,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 75.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 7.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": false,
+     "settle_time_s": 2.471999999999828,
+     "max_com_disp_mm": 34.96635496436804,
+     "final_com_disp_mm": 6.967998186278052,
+     "min_contact_margin_mm": 61.46665336638372,
+     "final_contact_margin_mm": 96.47432912905549,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.2940202278709789,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 100.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 10.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": false,
+     "settle_time_s": 2.5319999999998215,
+     "max_com_disp_mm": 46.58730546495587,
+     "final_com_disp_mm": 9.272830759288617,
+     "min_contact_margin_mm": 51.58933084922413,
+     "final_contact_margin_mm": 98.66961039619306,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.4102008984858073,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 125.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 12.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": false,
+     "settle_time_s": 2.901999999999781,
+     "max_com_disp_mm": 58.276567938035576,
+     "final_com_disp_mm": 11.485326133028542,
+     "min_contact_margin_mm": 41.6530369237082,
+     "final_contact_margin_mm": 100.77218162718039,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.5264108081571295,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 150.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 15.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": false,
+     "settle_time_s": 2.901999999999781,
+     "max_com_disp_mm": 69.96767439047966,
+     "final_com_disp_mm": 13.60217178695855,
+     "min_contact_margin_mm": 31.72029476733234,
+     "final_contact_margin_mm": 102.78008615483753,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.6413343334751758,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 175.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 17.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": false,
+     "settle_time_s": 2.771999999999795,
+     "max_com_disp_mm": 82.2643753209465,
+     "final_com_disp_mm": 2.1226111625144055,
+     "min_contact_margin_mm": 19.003397822022336,
+     "final_contact_margin_mm": 91.19390162629762,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.7185278006419608,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 200.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 20.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": null,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 341.57825863809717,
+     "final_com_disp_mm": 341.57825863809717,
+     "min_contact_margin_mm": -255.99059293821207,
+     "final_contact_margin_mm": -255.99059293821207,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 23.44099050879772,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "pd",
+     "push_n": 225.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 22.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 3.347999999999853,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1196.5331427431106,
+     "final_com_disp_mm": 1098.9433409522142,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -219.74668242776505,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 346.8518426467466,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "pd",
+     "push_n": 250.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 25.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 2.419999999999955,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1306.4736214069005,
+     "final_com_disp_mm": 1294.0276790288622,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.98541602435517,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 482.39953439302195,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "pd",
+     "push_n": 275.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 27.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 2.1899999999999804,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1261.2050575371445,
+     "final_com_disp_mm": 1119.7165170654794,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.85765667874614,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 359.31923138095846,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "pd",
+     "push_n": 300.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 30.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 2.0519999999999956,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1291.6656853523484,
+     "final_com_disp_mm": 1104.3893580025558,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.95490000285795,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 382.0529827843448,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "pd",
+     "push_n": 325.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 32.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 1.9520000000000015,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1289.2226836056839,
+     "final_com_disp_mm": 1129.3564816405803,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.85430301589835,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 433.99988796908855,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "pd",
+     "push_n": 350.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 35.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 1.8700000000000014,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1309.146105279494,
+     "final_com_disp_mm": 1200.535242506717,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.9173689948728,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 518.9765134382484,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "pd",
+     "push_n": 375.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 37.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 1.8000000000000014,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1243.9340539208627,
+     "final_com_disp_mm": 1173.6765787858585,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.94955942026647,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 498.9692635261355,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "pd",
+     "push_n": 400.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 40.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 1.7440000000000013,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1294.371475929267,
+     "final_com_disp_mm": 1249.9716843719618,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.90111566772413,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 574.6893483087972,
+     "min_feet_in_contact": 0
+    }
+   ]
+  },
+  {
+   "controller": "ankle",
+   "direction": [
+    1,
+    0
+   ],
+   "max_survived_n": 250.0,
+   "max_recovered_n": 250.0,
+   "first_fall_n": 275.0,
+   "rows": [
+    {
+     "controller": "ankle",
+     "push_n": 0.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 0.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": null,
+     "max_com_disp_mm": 0.1876700137066171,
+     "final_com_disp_mm": 0.0010991437633276991,
+     "min_contact_margin_mm": 91.43077690813382,
+     "final_contact_margin_mm": 91.46258506139927,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.04208977438160387,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 25.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 2.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.0,
+     "max_com_disp_mm": 2.8800799159519226,
+     "final_com_disp_mm": 0.013068284975601687,
+     "min_contact_margin_mm": 90.7595965928099,
+     "final_contact_margin_mm": 91.3391214917481,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.09534789551093048,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 50.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 5.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.0,
+     "max_com_disp_mm": 5.738127389400163,
+     "final_com_disp_mm": 0.027245431427823333,
+     "min_contact_margin_mm": 90.05954683300476,
+     "final_contact_margin_mm": 91.21536558046435,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.23308715560110818,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 75.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 7.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.0,
+     "max_com_disp_mm": 8.608857417260229,
+     "final_com_disp_mm": 0.04139570279314318,
+     "min_contact_margin_mm": 89.35351568897313,
+     "final_contact_margin_mm": 91.09180793938232,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.3706013984478375,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 100.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 10.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.20000000000000084,
+     "max_com_disp_mm": 11.53867298234046,
+     "final_com_disp_mm": 0.06321283669688624,
+     "min_contact_margin_mm": 88.57318045101461,
+     "final_contact_margin_mm": 90.90356832031662,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.5803659546681287,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 125.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 12.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.2700000000000009,
+     "max_com_disp_mm": 15.495454832864123,
+     "final_com_disp_mm": 0.09822623970546758,
+     "min_contact_margin_mm": 87.49691382787701,
+     "final_contact_margin_mm": 90.60317357969181,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 0.915308956534558,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 150.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 15.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.350000000000001,
+     "max_com_disp_mm": 22.314374017859656,
+     "final_com_disp_mm": 0.12769117415504333,
+     "min_contact_margin_mm": 85.9028098985803,
+     "final_contact_margin_mm": 90.35396312477522,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 1.1935904048101698,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 175.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 17.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.44000000000000106,
+     "max_com_disp_mm": 31.539304930279823,
+     "final_com_disp_mm": 0.15251187811538827,
+     "min_contact_margin_mm": 83.92033865891483,
+     "final_contact_margin_mm": 90.16941575061772,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 1.402661929112173,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 200.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 20.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 0.5600000000000012,
+     "max_com_disp_mm": 43.79829228957092,
+     "final_com_disp_mm": 0.16184429117853133,
+     "min_contact_margin_mm": 81.9818391967437,
+     "final_contact_margin_mm": 90.18627742701688,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 1.3951714707814586,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 225.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 22.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 1.0319999999999867,
+     "max_com_disp_mm": 60.36924253983599,
+     "final_com_disp_mm": 0.19460262446362347,
+     "min_contact_margin_mm": 79.76149897878548,
+     "final_contact_margin_mm": 90.15357811421485,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 1.4607177524245323,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 250.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 25.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": false,
+     "t_fall_s": null,
+     "survived": true,
+     "recovered": true,
+     "settle_time_s": 1.3519999999999515,
+     "max_com_disp_mm": 84.53078881984143,
+     "final_com_disp_mm": 0.19786127762415626,
+     "min_contact_margin_mm": 65.45091848100478,
+     "final_contact_margin_mm": 90.32096964948067,
+     "max_saturated_actuators": 0,
+     "foot_slip_mm": 1.297353343068536,
+     "min_feet_in_contact": 2
+    },
+    {
+     "controller": "ankle",
+     "push_n": 275.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 27.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 3.2619999999998623,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1280.640224078783,
+     "final_com_disp_mm": 1014.0284486580305,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -342.6255541582812,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 221.34160696888435,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "ankle",
+     "push_n": 300.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 30.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 2.3879999999999586,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1423.171056082438,
+     "final_com_disp_mm": 1385.0216121872236,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.94306177350092,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 573.1132170031431,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "ankle",
+     "push_n": 325.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 32.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 2.1719999999999824,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1413.9165704640993,
+     "final_com_disp_mm": 1241.8811248075472,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.4568582103445,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 475.52449646111467,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "ankle",
+     "push_n": 350.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 35.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 2.0419999999999967,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1426.2974392405595,
+     "final_com_disp_mm": 1237.2033109458296,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.45824401300956,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 500.0180100314151,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "ankle",
+     "push_n": 375.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 37.5,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 1.9480000000000015,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1420.2124693829076,
+     "final_com_disp_mm": 1268.7444512555244,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.5195781246167,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 548.3107961812384,
+     "min_feet_in_contact": 0
+    },
+    {
+     "controller": "ankle",
+     "push_n": 400.0,
+     "push_dt_s": 0.1,
+     "impulse_ns": 40.0,
+     "push_dir": [
+      1.0,
+      0.0
+     ],
+     "seed": 0,
+     "duration_s": 4.0,
+     "fell": true,
+     "t_fall_s": 1.8760000000000014,
+     "survived": false,
+     "recovered": false,
+     "settle_time_s": null,
+     "max_com_disp_mm": 1438.8860206584245,
+     "final_com_disp_mm": 1339.9464803637245,
+     "min_contact_margin_mm": -1000.0,
+     "final_contact_margin_mm": -218.8254877554142,
+     "max_saturated_actuators": 4,
+     "foot_slip_mm": 630.534263735794,
+     "min_feet_in_contact": 0
+    }
+   ]
+  }
+ ],
+ "sweep_lateral_and_backward": [
+  {
+   "controller": "pd",
+   "direction": [
+    0,
+    1
+   ],
+   "max_survived_n": 200.0,
+   "max_recovered_n": 100.0,
+   "first_fall_n": 250.0
+  },
+  {
+   "controller": "pd",
+   "direction": [
+    -1,
+    0
+   ],
+   "max_survived_n": 100.0,
+   "max_recovered_n": 0.0,
+   "first_fall_n": 150.0
+  },
+  {
+   "controller": "ankle",
+   "direction": [
+    0,
+    1
+   ],
+   "max_survived_n": 200.0,
+   "max_recovered_n": 150.0,
+   "first_fall_n": 250.0
+  },
+  {
+   "controller": "ankle",
+   "direction": [
+    -1,
+    0
+   ],
+   "max_survived_n": 150.0,
+   "max_recovered_n": 150.0,
+   "first_fall_n": 200.0
+  }
+ ],
+ "sweep_sagittal_0.2s_holdout": [
+  {
+   "controller": "pd",
+   "direction": [
+    1,
+    0
+   ],
+   "max_survived_n": 75.0,
+   "max_recovered_n": 0.0,
+   "first_fall_n": 100.0
+  },
+  {
+   "controller": "ankle",
+   "direction": [
+    1,
+    0
+   ],
+   "max_survived_n": 150.0,
+   "max_recovered_n": 150.0,
+   "first_fall_n": 175.0
+  }
+ ],
+ "stand_noise_seeds": [
+  {
+   "controller": "pd",
+   "push_n": 0.0,
+   "push_dt_s": 0.1,
+   "impulse_ns": 0.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 0,
+   "duration_s": 4.0,
+   "fell": false,
+   "t_fall_s": null,
+   "survived": true,
+   "recovered": true,
+   "settle_time_s": null,
+   "max_com_disp_mm": 7.91303848235618,
+   "final_com_disp_mm": 1.827717222327294,
+   "min_contact_margin_mm": 93.45892744761933,
+   "final_contact_margin_mm": 95.34179360373061,
+   "max_saturated_actuators": 0,
+   "foot_slip_mm": 5.092206841430059,
+   "min_feet_in_contact": 2
+  },
+  {
+   "controller": "pd",
+   "push_n": 0.0,
+   "push_dt_s": 0.1,
+   "impulse_ns": 0.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 1,
+   "duration_s": 4.0,
+   "fell": false,
+   "t_fall_s": null,
+   "survived": true,
+   "recovered": true,
+   "settle_time_s": null,
+   "max_com_disp_mm": 13.865977583436191,
+   "final_com_disp_mm": 3.0622621392686873,
+   "min_contact_margin_mm": 89.43731722200506,
+   "final_contact_margin_mm": 90.81262374129956,
+   "max_saturated_actuators": 0,
+   "foot_slip_mm": 2.324939347339137,
+   "min_feet_in_contact": 2
+  },
+  {
+   "controller": "pd",
+   "push_n": 0.0,
+   "push_dt_s": 0.1,
+   "impulse_ns": 0.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 2,
+   "duration_s": 4.0,
+   "fell": false,
+   "t_fall_s": null,
+   "survived": true,
+   "recovered": true,
+   "settle_time_s": null,
+   "max_com_disp_mm": 6.878441494306773,
+   "final_com_disp_mm": 1.4746306557486573,
+   "min_contact_margin_mm": 90.63317205409666,
+   "final_contact_margin_mm": 93.5434448259222,
+   "max_saturated_actuators": 0,
+   "foot_slip_mm": 5.003040633865345,
+   "min_feet_in_contact": 2
+  },
+  {
+   "controller": "pd",
+   "push_n": 0.0,
+   "push_dt_s": 0.1,
+   "impulse_ns": 0.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 3,
+   "duration_s": 4.0,
+   "fell": false,
+   "t_fall_s": null,
+   "survived": true,
+   "recovered": true,
+   "settle_time_s": null,
+   "max_com_disp_mm": 29.821801265335736,
+   "final_com_disp_mm": 3.9892887572829565,
+   "min_contact_margin_mm": 88.02209148760234,
+   "final_contact_margin_mm": 90.81217981066597,
+   "max_saturated_actuators": 0,
+   "foot_slip_mm": 8.438269626289685,
+   "min_feet_in_contact": 2
+  },
+  {
+   "controller": "pd",
+   "push_n": 0.0,
+   "push_dt_s": 0.1,
+   "impulse_ns": 0.0,
+   "push_dir": [
+    1.0,
+    0.0
+   ],
+   "seed": 4,
+   "duration_s": 4.0,
+   "fell": false,
+   "t_fall_s": null,
+   "survived": true,
+   "recovered": true,
+   "settle_time_s": null,
+   "max_com_disp_mm": 4.2300190967153,
+   "final_com_disp_mm": 0.46546127968838313,
+   "min_contact_margin_mm": 95.87367579482684,
+   "final_contact_margin_mm": 96.17233677620351,
+   "max_saturated_actuators": 0,
+   "foot_slip_mm": 7.392373329306634,
+   "min_feet_in_contact": 2
+  }
+ ]
+}

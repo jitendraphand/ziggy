@@ -13,3 +13,17 @@
 8. **Commissioning**: follow the SAFETY.md ladder: gantry, tether, E-stop function test before every session.
 
 Joint zero calibration: put each limb in its fixture pose, which matches the MJCF zero (straight legs, arms down). Store the encoder offsets.
+
+## Assembled and exploded CAD views
+`python tools/cad_views.py` renders these from the **actual exported STLs**, placed with the transforms in `hardware/assembly.json` (86 instances of 18 part types; the two coupons are not placed).
+
+| | |
+|---|---|
+| ![assembled](../media/cad_assembled.png) | ![exploded](../media/cad_exploded.png) |
+| ![hand assembled](../media/cad_hand_assembled.png) | ![hand exploded](../media/cad_hand_exploded.png) |
+
+How to read them:
+* **Blue, orange and green** are generated printed CAD.
+* **Grey** is the *conceptual* metal tube and frame volume. It is **not designed**.
+* **Red** marks actuator **envelopes** from datasheet dimensions (AK80-64 Ø98×62, RS04 120×120×56, AK70-10 Ø89×50). They are not manufacturer CAD.
+* Placement is schematic and estimated: there are no mates, no interference check and no fastener model. In particular the actuator covers, thumb and spool positions are illustrative. **The views do not validate fit or mounting.**

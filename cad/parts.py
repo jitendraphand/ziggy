@@ -69,8 +69,11 @@ def shell_box(w, d, h, name_opening=None):
     i = cq.Workplane("XY").rect(w - 2*WALL, d - 2*WALL).extrude(h - WALL).edges("|Z").fillet(18)
     return o.cut(i)
 
-def torso_shell_front(): return shell_box(340, 110, 440)   # print standing, open face down
-def torso_shell_back():  return shell_box(340, 110, 440)
+def torso_shell_front():
+    """340 wide x 440 tall x 110 deep, open toward the robot interior. Printed standing on its
+    340x110 edge so the open face is vertical (fits 470 mm Z). Fix F-005: v0.1.0 was open at its end."""
+    return shell_box(340, 440, 110).rotate((0, 0, 0), (1, 0, 0), 90)
+def torso_shell_back():  return torso_shell_front()
 def pelvis_cover():      return shell_box(280, 160, 120)
 
 def head_shell_half():
@@ -149,8 +152,8 @@ PARTS = {
     "cable_clip_tube40":  (cable_clip_tube40, "PETG", 24, "guide", "flat on bed"),
     "foot_sole_pad":      (foot_sole_pad, "TPU-95A", 2, "functional", "tread down"),
     "foot_cover":         (foot_cover, "PETG", 2, "cover", "open side down"),
-    "torso_shell_front":  (torso_shell_front, "PETG", 1, "cover", "open side down, tall"),
-    "torso_shell_back":   (torso_shell_back, "PETG", 1, "cover", "open side down, tall"),
+    "torso_shell_front":  (torso_shell_front, "PETG", 1, "cover", "standing on 340x110 edge, open face vertical, brim"),
+    "torso_shell_back":   (torso_shell_back, "PETG", 1, "cover", "standing on 340x110 edge, open face vertical, brim"),
     "pelvis_cover":       (pelvis_cover, "PETG", 1, "cover", "open side down"),
     "head_shell_half":    (head_shell_half, "PETG", 2, "cover", "rim on bed, tree supports"),
     "estop_mount":        (estop_mount, "PETG", 1, "guide", "flat"),
